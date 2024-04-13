@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 200
+animator: {fileID: 0}
   target: {fileID: 0}
 --- !u!114 &3741099036276205462
 MonoBehaviour:
@@ -321,21 +322,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.4}
   serializedVersion: 2
    m_Radius: 0.2
---- !u!114 &752070735125564252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8571035290254059641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd6a6b494585e8947a324d383e9918a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-animator: {fileID: 0}
-  target: {fileID: 0}
 --- !u!95 &8953466058416811462
 Animator:
   serializedVersion: 5
