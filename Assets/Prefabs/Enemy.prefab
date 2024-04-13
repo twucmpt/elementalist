@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 200
+  animator: {fileID: 0}
   target: {fileID: 0}
 --- !u!114 &3741099036276205462
 MonoBehaviour:
@@ -258,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  cooldown: 2
 --- !u!50 &3965029212189304478
 Rigidbody2D:
   serializedVersion: 4
