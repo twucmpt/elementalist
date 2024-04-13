@@ -389,6 +389,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8571035290254059641, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5058096278959671515}
+    - targetCorrespondingSourceObject: {fileID: 8571035290254059641, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5846895077505922820}
   m_SourcePrefab: {fileID: 100100000, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
 --- !u!4 &6706284733291926456 stripped
 Transform:
@@ -427,6 +430,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5846895077505922820}
+        m_TargetAssemblyTypeName: SpawnPrefab, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5058096278959671515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,6 +455,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusEffect: {fileID: 3957874196357831519, guid: 7f89916987ed3ed4dbaab2463a4467fb, type: 3}
+--- !u!114 &5846895077505922820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7759062376692369138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3bdb51b438a1e49ae41662e41c5cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2107581794563841030, guid: 34922747e60464441a500dbb373b0644, type: 3}
 --- !u!1001 &5631829882444277119
 PrefabInstance:
   m_ObjectHideFlags: 0
