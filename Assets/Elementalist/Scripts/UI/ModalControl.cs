@@ -9,7 +9,6 @@ public class ModalControl : MonoBehaviour
 
     public void Awake()
     {
-        //gameObject.SetActive(false);
     }
 
     public void Update()
@@ -27,7 +26,7 @@ public class ModalControl : MonoBehaviour
         
     }
 
-    public void CloseModal()
+    public virtual void CloseModal()
     {
         Time.timeScale = 1;
         gameObject.SetActive(false);

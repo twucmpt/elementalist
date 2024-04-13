@@ -1,25 +1,47 @@
+using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class UpgradeModal : MonoBehaviour {
+public class UpgradeModal : ModalControl {
   public bool isOpen;
+  //self reference, this is okay i guess
   public ModalControl upgradeModal;
   public GameObject upgradeDisplayTilePrefab;
 
+  private ElementalType selection;
+  private Dictionary<ElementalType, UpgradeDisplayTile> tiles = new Dictionary<ElementalType, UpgradeDisplayTile>();
+
   public void TriggerUpgrade(List<ElementalDisplayInfo> upgrades) {
-    // open the modal
-    upgradeModal = gameObject.GetComponent<ModalControl>();
+    // open self
     upgradeModal.OpenModal();
 
     // find modal content section
-    GameObject upgradeContent = upgradeModal.transform.Find("Content").gameObject;
-    List<GameObject> children = new List<GameObject>(upgradeContent.GetComponentsInChildren<GameObject>());
+    GameObject upgradeContent = upgradeModal.transform.Find("ModalBlur/UpgradeModalFrame/Content").gameObject;
+    List<GameObject> children = new List<GameObject>{
+      upgradeContent.transform.Find("Row 1/UpgradeUITile1").gameObject, 
+      upgradeContent.transform.Find("Row 1/UpgradeUITile2").gameObject, 
+      upgradeContent.transform.Find("Row 2/UpgradeUITile3").gameObject, 
+      upgradeContent.transform.Find("Row 2/UpgradeUITile4").gameObject, 
+    };
 
     // populate the modal with the upgrades
-    for (int i = 0; i < upgrades.Count; i++) {
-      GameObject upgradeTile = Object.Instantiate(upgradeDisplayTilePrefab);
-      upgradeTile.transform.SetParent(children[i % children.Count].transform);
-      upgradeTile.GetComponent<UpgradeDisplayTile>().SetDisplay(upgrades[i]);
+    for (int i = 0; i < children.Count; i++) {
+      // UDT tasks
+      UpgradeDisplayTile newTile = children[i].GetComponent<UpgradeDisplayTile>();
+      Debug.Log(newTile.ToString());
+      newTile.SetDisplay(upgrades[i]);
+      tiles.Add(upgrades[i].type, newTile);
+    }
+  }
+
+  public void SelectUpgrade(ElementalType type) {
+    selection = type;
+    tiles[type].Highlight();
+    foreach (ElementalType t in tiles.Keys) {
+      if (t != type) {
+        tiles[t].Unhighlight();
+      }
     }
   }
 }

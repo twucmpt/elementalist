@@ -135,6 +135,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c80b35c0393e346af736bcb334e368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonClicked:
+    m_PersistentCalls:
+      m_Calls: []
+  type: 0
+  tileClicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2081296979253214110
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,7 +727,7 @@ RectTransform:
   m_GameObject: {fileID: 9096632443636098101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25751, y: 0.25751, z: 0.25751}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3491787799828284137}
@@ -785,7 +792,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
+  m_fontSize: 30
   m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
@@ -821,7 +828,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -118.81944, y: -31.355255, z: -124.57078, w: -14.852449}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

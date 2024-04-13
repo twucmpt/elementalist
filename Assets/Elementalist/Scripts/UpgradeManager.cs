@@ -3,20 +3,19 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
 public enum ElementalType { 
     Fire,
     Ice, 
     //Water, // unimplemented
-    //Earth, // unimplemented
-    //Air, // unimplemented
+    Earth,
+    Air,
     //Light, // unimplemented
     //Dark // unimplemented
 } 
 
 // information about an elemental to be shown in UI
-public struct ElementalDisplayInfo {
+public class ElementalDisplayInfo {
+    public ElementalType type;
     public int maxLevel;
     public string description;
     public string name;
@@ -30,20 +29,50 @@ public class CodexEntry {
 
     public GameObject prefab;
 
-    public ElementalDisplayInfo displayInfo;
+    // elemental display info - destructured to work in unity editor
+    public int maxLevel;
+    public string description;
+    public string name;
+    public Sprite icon;
 }
 
 public class UpgradeManager : MonoBehaviour {
 
     // define in editor
-    public static List<CodexEntry> Codex;
+    public List<CodexEntry> Codex;
+
+    public SummonElementals player;
+    public UpgradeModal modal;
 
     // update as player levels up
-    public Dictionary<ElementalType, int> CurrentElementals;
+    public Dictionary<ElementalType, int> CurrentElementals = new Dictionary<ElementalType, int> {};
+
+    //public void Awake() {
+    //    TriggerUpgrade();
+    //}
 
     public List<ElementalDisplayInfo> GenerateUpgrades() {
+        Debug.Log("Generating upgrades");
         return Codex
-        .FindAll(entry => CurrentElementals[entry.type] < entry.displayInfo.maxLevel)
-        .ConvertAll(entry => entry.displayInfo);
+        .FindAll(entry => !CurrentElementals.ContainsKey(entry.type) || CurrentElementals[entry.type] != entry.maxLevel)
+        .ConvertAll(entry => new ElementalDisplayInfo {
+            type = entry.type,
+            maxLevel = entry.maxLevel,
+            description = entry.description,
+            name = entry.name,
+            icon = entry.icon
+        });
+    }
+
+    public void UpsertElemental(ElementalType type) {
+        if(!CurrentElementals.ContainsKey(type)) {
+            CurrentElementals[type] = 0;
+        }
+        CurrentElementals[type] += 1;
+        player.UpsertElemental(type);
+    }
+
+    public void TriggerUpgrade() {
+        modal.TriggerUpgrade(GenerateUpgrades());
     }
 }

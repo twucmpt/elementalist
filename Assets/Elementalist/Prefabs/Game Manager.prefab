@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 619380518184935237}
   - component: {fileID: 7237045740121749829}
   - component: {fileID: 4745897306370685228}
+  - component: {fileID: 564047682217288801}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -88,3 +89,30 @@ MonoBehaviour:
   mapChunks:
   - {fileID: 6852370326254779284, guid: efbc6f868d7ea3145b6718f9f8e6e53f, type: 3}
   chunkSize: 64
+--- !u!114 &564047682217288801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2186683336727977901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1fd9b283896eb4fa798319765c030b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Codex:
+  - type: 0
+    prefab: {fileID: 3433264806588001381, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
+    maxLevel: 7
+    description: This dude's hot as hell
+    name: Fire
+    icon: {fileID: 21300000, guid: 07f1626437c34cd4f91851a0a0bc51d5, type: 3}
+  - type: 1
+    prefab: {fileID: 7759062376692369138, guid: 6e61697caaa68124abba386fe9b9e83b, type: 3}
+    maxLevel: 7
+    description: This dude's cold as hell
+    name: Ice
+    icon: {fileID: 21300000, guid: 98abc6e7a7db4774f89ae113295256bd, type: 3}
+  player: {fileID: 0}
+  modal: {fileID: 0}
