@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class ExplodeOnCollide : MonoBehaviour
 {
-    public UnityEvent OnExplode;
+    public UnityEvent<ElementalCreature, Collider2D[]> OnExplode;
     private ElementalCreature elemental;
 
     void Start() {
@@ -21,7 +21,7 @@ public class ExplodeOnCollide : MonoBehaviour
                     collider.gameObject.SendMessage("DealDamage", (int)elemental.GetStat(StatType.Damage));
                 }
             }
-            OnExplode.Invoke();
+            OnExplode.Invoke(elemental, colliders);
             Destroy(gameObject);
         }
     }

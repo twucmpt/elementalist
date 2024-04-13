@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyMovement : Movement
+public class EnemyMovement : ElementalMovement
 {
     public Transform target;
 
