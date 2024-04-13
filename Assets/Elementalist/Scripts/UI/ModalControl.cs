@@ -18,10 +18,6 @@ public class ModalControl : MonoBehaviour
         {
             CloseModal();
         }
-        //if (Input.GetKeyDown(KeyCode.U))
-        //{
-        //    OpenModal();
-        //}
     }
 
     public void OpenModal()
