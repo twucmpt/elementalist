@@ -1,0 +1,710 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7066482365380798212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3063456914075314691}
+  - component: {fileID: 3203102766246174270}
+  - component: {fileID: -323427374560083909}
+  m_Layer: 0
+  m_Name: RockWalls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3063456914075314691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066482365380798212}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1844300724644172050}
+  - {fileID: 1835826689959644752}
+  - {fileID: 8163810590776138548}
+  - {fileID: 4369314700991124513}
+  - {fileID: 8389886917548954376}
+  - {fileID: 7625479518548854982}
+  - {fileID: 798134990802552907}
+  - {fileID: 2386847594149811929}
+  - {fileID: 4728309913844808769}
+  - {fileID: 304876047987500451}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3203102766246174270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066482365380798212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5988fb0af1512d843a53b3e1fa741857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 4
+--- !u!114 &-323427374560083909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066482365380798212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7cba94592346a488a190a887c58c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &549301028066041718
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7 (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &7625479518548854982 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 549301028066041718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1883202647957095608
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750450, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7 (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &8389886917548954376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 1883202647957095608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2235765760464358532
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750450, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7 (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &8163810590776138548 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 2235765760464358532}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3446084633120238577
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7 (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &4728309913844808769 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 3446084633120238577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5716033685761196393
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750450, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7 (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &2386847594149811929 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 5716033685761196393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5975797274390479761
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7 (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &4369314700991124513 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 5975797274390479761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7304606513617018875
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7 (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &798134990802552907 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 7304606513617018875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7671745908872901139
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750450, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &304876047987500451 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 7671745908872901139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8590209204852414944
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7 (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &1835826689959644752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 8590209204852414944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8634775817325659810
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3063456914075314691}
+    m_Modifications:
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.281
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750450, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947911505737750455, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+      propertyPath: m_Name
+      value: PF Props Stone T7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+--- !u!4 &1844300724644172050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: f826bf48ad5bedc4ab6cabe6c4e498e8, type: 3}
+  m_PrefabInstance: {fileID: 8634775817325659810}
+  m_PrefabAsset: {fileID: 0}

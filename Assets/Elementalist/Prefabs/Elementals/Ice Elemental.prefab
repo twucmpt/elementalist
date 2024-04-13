@@ -48,22 +48,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5814753784433791644, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5814753784433791644, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
-      propertyPath: m_Color.g
-      value: 0.70026994
-      objectReference: {fileID: 0}
-    - target: {fileID: 5814753784433791644, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5814753784433791644, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6153499618662696658, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
       propertyPath: __stats.Array.size
       value: 6
@@ -379,10 +363,6 @@ PrefabInstance:
     - target: {fileID: 8571035290254059641, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
       propertyPath: m_Name
       value: Ice Elemental
-      objectReference: {fileID: 0}
-    - target: {fileID: 8953466058416811462, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

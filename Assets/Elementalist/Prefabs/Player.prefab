@@ -474,6 +474,8 @@ MonoBehaviour:
     cooldown: 0
   - prefab: {fileID: 3433264806588001381, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
     cooldown: 0
+  - prefab: {fileID: 3433264806588001381, guid: 44ae7cbd64843374bb3ee8cb43e271a1, type: 3}
+    cooldown: 0
   spawnAnimation: {fileID: 3355102901899904990, guid: 31c9448230c5d5448ae380f6439c5b30, type: 3}
 --- !u!82 &1782504559934603729
 AudioSource:
