@@ -18,7 +18,7 @@ public class CombinationTree
 
   public ElementalCombination[] combinations = new ElementalCombination[]
   {
-    new ElementalCombination { type1 = ElementalType.Fire, type2 = ElementalType.Water, result = ElementalType.Air }, // EXAMPLE
+    //new ElementalCombination { type1 = ElementalType.Fire, type2 = ElementalType.Water, result = ElementalType.Air }, // EXAMPLE
   };
 
   public List<ElementalCombination> getPossibleCombinations(ElementalType[] types)

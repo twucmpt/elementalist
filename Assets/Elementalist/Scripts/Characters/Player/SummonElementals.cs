@@ -44,8 +44,16 @@ public class SummonElementals : MonoBehaviour
     IEnumerator DelaySpawn(GameObject elemental, float delayTime)
     {
         yield return new WaitForSeconds(delayTime);
+        // we'll need to check for player death here
         elemental.SetActive(true);
     }
  
+    public void UpsertElemental(ElementalType type) {
+        //Summons newElemental = new Summons();
+        //newElemental.prefab = prefab;
+        //newElemental.cooldown = prefab.GetComponent<ElementalCreature>().stats.GetStat(StatType.Cooldown);
+        //elementals.Add(newElemental);
+        Console.WriteLine("Upserting " + type);
+    }
 
 }
