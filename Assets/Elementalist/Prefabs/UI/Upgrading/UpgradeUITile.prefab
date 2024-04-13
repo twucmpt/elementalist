@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9064306538085367958}
   - component: {fileID: 4637864341831775584}
   - component: {fileID: 8614020512869196901}
+  - component: {fileID: 4141391652351785979}
   m_Layer: 5
   m_Name: UpgradeUITile
   m_TagString: Untagged
@@ -122,6 +123,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &4141391652351785979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814983872543120159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c80b35c0393e346af736bcb334e368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2081296979253214110
 GameObject:
   m_ObjectHideFlags: 0
