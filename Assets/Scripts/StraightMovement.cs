@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StraightMovement : Movement
+public class StraightMovement : ElementalMovement
 {
     public Vector2 direction;
 
