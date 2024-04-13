@@ -19,7 +19,7 @@ public class SummonElementals : MonoBehaviour
         foreach (Summons elemental in elementals) {
             elemental.cooldown -= Time.deltaTime;
             if (elemental.cooldown <= 0) {
-                elemental.cooldown = elemental.prefab.GetComponent<ElementalCreature>().GetStat(StatType.Cooldown);
+                elemental.cooldown = elemental.prefab.GetComponent<ElementalCreature>().stats.GetStat(StatType.Cooldown);
                 SpawnElemental(elemental.prefab);
             }
         }

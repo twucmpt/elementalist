@@ -8,6 +8,6 @@ public class ElementalMovement : Movement
         base.Start();
     }
     override public float GetMoveSpeed() {
-        return elemental.GetStat(StatType.MovementSpeed);
+        return elemental.stats.GetStat(StatType.MovementSpeed);
     }
 }

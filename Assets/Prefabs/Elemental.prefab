@@ -327,9 +327,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1473980626c6ac646a1d088b55bb542d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLevel: 7
-  level: 1
-  __stats:
+  _stats:
+    maxLevel: 7
+    level: 1
+  scalingStats:
   - type: 0
     scaling:
       serializedVersion: 2
@@ -355,9 +356,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    scaleFactor: 5
+    scaleFactor: 4
     offset: 1
     reverse: 1
+    multiplicativeModifiers: []
+    additiveModifers: []
   - type: 1
     scaling:
       serializedVersion: 2
@@ -386,6 +389,8 @@ MonoBehaviour:
     scaleFactor: 100
     offset: 100
     reverse: 0
+    multiplicativeModifiers: []
+    additiveModifers: []
   - type: 2
     scaling:
       serializedVersion: 2
@@ -414,3 +419,5 @@ MonoBehaviour:
     scaleFactor: 3
     offset: 2
     reverse: 0
+    multiplicativeModifiers: []
+    additiveModifers: []
