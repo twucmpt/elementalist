@@ -7,6 +7,7 @@ public class NearestEnemyMovement : ElementalMovement
     protected override void FixedUpdate()
     {
         target = FindClosestEnemy();
+        if (target == null) target = GameManager.instance.player.transform;
         moveVal = (target.position - transform.position).normalized;
         base.FixedUpdate();
     }

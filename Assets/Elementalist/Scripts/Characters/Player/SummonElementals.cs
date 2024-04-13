@@ -7,13 +7,19 @@ using UnityEngine;
 [Serializable]
 public class Summons {
     public GameObject prefab;
-    public float cooldown;
+    public float cooldown = float.PositiveInfinity;
 }
 
 public class SummonElementals : MonoBehaviour
 {
     public float distance;
     public List<Summons> elementals = new List<Summons>();
+
+    void Start() {
+        foreach (Summons elemental in elementals) {
+            elemental.cooldown = elemental.prefab.GetComponent<ElementalCreature>().stats.GetStat(StatType.Cooldown) + UnityEngine.Random.Range(-1f, 1f);
+        }
+    }
 
     void Update() {
         foreach (Summons elemental in elementals) {

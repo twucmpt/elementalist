@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 3965029212189304478}
   - component: {fileID: 6943017562661679473}
   - component: {fileID: 4254099888220866628}
-  - component: {fileID: 4654725599295410819}
+  - component: {fileID: 3532766852602962768}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -210,7 +210,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: c1cdd26cc09ad224884556bc4d8296ae, type: 3}
-  m_Color: {r: 0.7924528, g: 0.42986828, b: 0.42986828, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -301,6 +301,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: die
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3532766852602962768}
+        m_TargetAssemblyTypeName: SetTag, Assembly-CSharp
+        m_MethodName: Remove
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -476,7 +488,7 @@ MonoBehaviour:
     reverse: 0
     multiplicativeModifiers: []
     additiveModifers: []
---- !u!114 &4654725599295410819
+--- !u!114 &3532766852602962768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -485,6 +497,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8571035290254059641}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5e7049df49b8984fb776a2c87fef9a7, type: 3}
+  m_Script: {fileID: 11500000, guid: b1dd5e0ca447b0746931759dff1c76f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

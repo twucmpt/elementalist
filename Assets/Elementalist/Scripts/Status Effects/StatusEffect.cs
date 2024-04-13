@@ -5,7 +5,7 @@ public class StatusEffect : MonoBehaviour
 {
     protected Stats elementalStats;
     public float cooldown = float.PositiveInfinity;
-    private Health health;
+    protected Health health;
     void Awake() {
         health = transform.parent.GetComponent<Health>();
     }

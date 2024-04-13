@@ -209,8 +209,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 6fc66c021eec74942b4e71a3fde4dc04,
-    type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: 6fc66c021eec74942b4e71a3fde4dc04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -233,8 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: c3647ceb9b049bf4098ef8e99fa4d717,
-    type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: c3647ceb9b049bf4098ef8e99fa4d717, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -378,7 +376,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 10
-  animator: {fileID: 4169646853607414287}
   onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -435,11 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 1
   elementals:
-  - prefab: {fileID: 7759062376692369138, guid: 6e61697caaa68124abba386fe9b9e83b,
-      type: 3}
-    stats:
-      cooldown: 5
-      damage: 5
-      speed: 100
-      range: 10
-    cooldown: 5
+  - prefab: {fileID: 7759062376692369138, guid: 6e61697caaa68124abba386fe9b9e83b, type: 3}
+    cooldown: 0
+  - prefab: {fileID: 3433264806588001381, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
+    cooldown: 0

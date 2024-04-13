@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -18,7 +16,7 @@ public class ExplodeOnCollide : MonoBehaviour
 
             foreach (Collider2D collider in colliders) {
                 if (collider.gameObject.CompareTag("Enemy")) {
-                    collider.gameObject.SendMessage("DealDamage", (int)elemental.stats.GetStat(StatType.Damage));
+                    collider.gameObject.SendMessage("DealDamage", elemental.stats.GetStat(StatType.Damage));
                 }
             }
             OnExplode.Invoke(elemental, colliders);

@@ -1,10 +1,17 @@
+using UnityEngine;
+
 public class DamageOverTimeEffect : StatusEffect {
-    Health health;
+    public float dotRate = 1f;
+    private float currentCooldown;
     void Start() {
-        health = transform.parent.GetComponent<Health>();
+        currentCooldown = dotRate;
     }
     override public void Update() {
-        health.DealDamage((int)elementalStats.GetStat(StatType.EffectStrength));
+        currentCooldown -= Time.deltaTime;
+        if (currentCooldown <=0 ) {
+            health.DealDamage(elementalStats.GetStat(StatType.EffectStrength));
+            currentCooldown = dotRate;
+        }
         base.Update();
     }
 }

@@ -4,13 +4,15 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     public int maxHealth;
-    public int health;
+    public float health;
     public UnityEvent onDeath;
     public UnityEvent onTakeDamage;
 
-    public void DealDamage(int damage) {
+    public void DealDamage(float damage) {
+        if (health <= 0) return;
+
         health -= damage;
-        if (health <= 0 && health + damage > 0) {
+        if (health <= 0) {
             onDeath.Invoke();
         }
         else if (health > 0) {
