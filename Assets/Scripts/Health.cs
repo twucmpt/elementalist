@@ -5,8 +5,6 @@ public class Health : MonoBehaviour
 {
     public int maxHealth;
     public int health;
-    public Animator animator;
-
     public UnityEvent onDeath;
     public UnityEvent onTakeDamage;
 
