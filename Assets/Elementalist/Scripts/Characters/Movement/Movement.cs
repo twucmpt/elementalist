@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
     public Animator animator;
 
     protected virtual void FixedUpdate() {
-        if ((transform.localScale.x < 0 && moveVal.x > 0) || (transform.localScale.x > 0 && moveVal.x < 0)) {
+        if ((transform.localScale.x > 0 && moveVal.x > 0) || (transform.localScale.x < 0 && moveVal.x < 0)) {
             transform.localScale=new Vector3(-transform.localScale.x,transform.localScale.y,transform.localScale.z);
         }
         rb.velocity = new Vector3(moveVal.x, moveVal.y, 0) * GetMoveSpeed() * Time.fixedDeltaTime;
