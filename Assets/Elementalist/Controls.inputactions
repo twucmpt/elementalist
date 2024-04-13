@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "OpenUpgradeMenu",
+                    "type": "Button",
+                    "id": "587f6da1-606e-4da0-aca6-3e102f3f32be",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -187,6 +196,17 @@
                     "action": "Continue",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9a05ac5-251c-4a9a-adc9-0465fbe36d5f",
+                    "path": "<Keyboard>/u",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "OpenUpgradeMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -198,6 +218,15 @@
                     "name": "Continue",
                     "type": "Button",
                     "id": "ac433a7c-a0e7-416d-8dac-a48cb842f3f8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OpenUpgradesModal",
+                    "type": "Button",
+                    "id": "11d9ad69-f939-401f-beac-c5635c1284de",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -224,6 +253,17 @@
                     "processors": "",
                     "groups": "Controller",
                     "action": "Continue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7f8b2d4-9ba2-4456-89d9-26a935c09a6e",
+                    "path": "<Keyboard>/u",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "OpenUpgradesModal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

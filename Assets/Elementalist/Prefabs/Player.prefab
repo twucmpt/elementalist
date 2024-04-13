@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 4847712116357837619}
   - component: {fileID: 4129831178514285160}
   - component: {fileID: 925459023366238808}
+  - component: {fileID: 2799320739524696832}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -461,3 +462,16 @@ MonoBehaviour:
   - prefab: {fileID: 3433264806588001381, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
     cooldown: 0
   spawnAnimation: {fileID: 3355102901899904990, guid: 31c9448230c5d5448ae380f6439c5b30, type: 3}
+--- !u!114 &2799320739524696832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8571035290254059641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 186115ac7ce8c024e894ac254d804ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeModal: {fileID: 0}

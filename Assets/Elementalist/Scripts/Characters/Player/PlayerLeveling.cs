@@ -3,17 +3,18 @@ using UnityEngine.Events;
 
 
 
-public class PlayerLeveling {
+public class PlayerLeveling : MonoBehaviour {
     public UnityEvent OnLevelUp;
  
     float exp = 0;
 
-    void FixedUpdate() {
+    void Update() {
         AddExp(Time.deltaTime);
     }
 
+    private int level = 1;
     // level should be calculated based on exp
-    int level { 
+    int Level { 
         get { return level; } 
         set {
             level = value;
@@ -23,13 +24,13 @@ public class PlayerLeveling {
 
     // leveling curve defined here
     private int expToNextLevel() {
-        return 200 * level^2;
+        return 10 * Level * Level;
     }
 
     public void AddExp(float exp) {
         this.exp += exp;
-        if(expToNextLevel() < exp) {
-            level++;
+        if(expToNextLevel() < this.exp) {
+            Level++;
         }
     }
 }
