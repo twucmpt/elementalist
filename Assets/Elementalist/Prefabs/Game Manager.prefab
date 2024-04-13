@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1853589706040444471}
   - component: {fileID: 619380518184935237}
   - component: {fileID: 7237045740121749829}
+  - component: {fileID: 4745897306370685228}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -71,3 +72,19 @@ MonoBehaviour:
     cost: 4
     weight: 1
   mainCamera: {fileID: 0}
+--- !u!114 &4745897306370685228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2186683336727977901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf4c4fc9a91eea41b4fa3d862a84ae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  mapChunks:
+  - {fileID: 6852370326254779284, guid: efbc6f868d7ea3145b6718f9f8e6e53f, type: 3}
+  chunkSize: 64
