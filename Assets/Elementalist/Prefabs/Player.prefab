@@ -470,7 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 1
   elementals:
-  - prefab: {fileID: 7759062376692369138, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
+  - prefab: {fileID: 7759062376692369138, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
     cooldown: 0
   spawnAnimation: {fileID: 3355102901899904990, guid: 31c9448230c5d5448ae380f6439c5b30, type: 3}
 --- !u!82 &1782504559934603729

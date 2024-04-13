@@ -235,6 +235,8 @@ MonoBehaviour:
   moveSpeed: 200
   animator: {fileID: 0}
   target: {fileID: 0}
+  overridePos: {x: 0, y: 0, z: 0}
+  useOverride: 0
 --- !u!95 &8953466058416811462
 Animator:
   serializedVersion: 5
