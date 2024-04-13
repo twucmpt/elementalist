@@ -1,32 +1,35 @@
-// #publicgang
+using UnityEngine;
+using UnityEngine.Events;
 
-public enum ElementalType { 
-    Fire, // unimplemented
-    Water, // unimplemented
-    Earth, // unimplemented
-    Air, // unimplemented
-    Light, // unimplemented
-    Dark // unimplemented
-} 
-public struct Elemental {
-    ElementalType type;
-    int level;
-}
 
-public interface Leveling {
-    int exp { get; set; }
+
+public class PlayerLeveling {
+    public UnityEvent OnLevelUp;
+ 
+    float exp = 0;
+
+    void FixedUpdate() {
+        AddExp(Time.deltaTime);
+    }
 
     // level should be calculated based on exp
-    int level { get; }
+    int level { 
+        get { return level; } 
+        set {
+            level = value;
+            OnLevelUp.Invoke();
+        } 
+    }
 
-    void AddExp(int exp);
+    // leveling curve defined here
+    private int expToNextLevel() {
+        return 200 * level^2;
+    }
 
-    // the list of elementals the player has unlocked
-    Elemental[] elementals { get; set; }
-
-    void AddElemental(ElementalType type);
-    void UpgradeElemental(ElementalType type);
-
-    // returns true if the elementals were combined successfully
-    bool TryCombineElementals(ElementalType type1, ElementalType type2);
+    public void AddExp(float exp) {
+        this.exp += exp;
+        if(expToNextLevel() < exp) {
+            level++;
+        }
+    }
 }

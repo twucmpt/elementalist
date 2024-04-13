@@ -50,7 +50,7 @@ public class Stat
 
 [Serializable]
 public class Stats {
-    public int maxLevel = 1;
+    public int maxLevel = 7;
     public int level = 1;
     public Dictionary<StatType, Stat> stats;
 
