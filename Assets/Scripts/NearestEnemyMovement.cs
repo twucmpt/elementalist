@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NearestEnemyMovement : Movement
+public class NearestEnemyMovement : ElementalMovement
 {
     public Transform target;
 

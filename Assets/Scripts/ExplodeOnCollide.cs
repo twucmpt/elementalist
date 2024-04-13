@@ -14,11 +14,11 @@ public class ExplodeOnCollide : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Enemy")) {
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, elemental.stats.range);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, elemental.GetStat(StatType.Range));
 
             foreach (Collider2D collider in colliders) {
                 if (collider.gameObject.CompareTag("Enemy")) {
-                    collider.gameObject.SendMessage("DealDamage", elemental.stats.damage);
+                    collider.gameObject.SendMessage("DealDamage", (int)elemental.GetStat(StatType.Damage));
                 }
             }
             OnExplode.Invoke();
