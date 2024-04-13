@@ -436,3 +436,4 @@ MonoBehaviour:
     cooldown: 0
   - prefab: {fileID: 3433264806588001381, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
     cooldown: 0
+  spawnAnimation: {fileID: 3355102901899904990, guid: 31c9448230c5d5448ae380f6439c5b30, type: 3}

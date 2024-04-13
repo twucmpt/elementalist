@@ -14,6 +14,7 @@ public class SummonElementals : MonoBehaviour
 {
     public float distance;
     public List<Summons> elementals = new List<Summons>();
+    public GameObject spawnAnimation;
 
     void Start() {
         foreach (Summons elemental in elementals) {
@@ -34,5 +35,17 @@ public class SummonElementals : MonoBehaviour
     void SpawnElemental(GameObject prefab) {
         Vector3 pos = transform.position + Vector3.right * transform.localScale.x * distance;
         GameObject elemental = Instantiate(prefab, pos, Quaternion.identity);
+        elemental.SetActive(false);
+        Instantiate(spawnAnimation, pos + Vector3.down * 0.1f, Quaternion.identity);
+        // Not the best place to do this, but leaving it here for now
+        StartCoroutine(DelaySpawn(elemental, 1f));
     }
+
+    IEnumerator DelaySpawn(GameObject elemental, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        elemental.SetActive(true);
+    }
+ 
+
 }
