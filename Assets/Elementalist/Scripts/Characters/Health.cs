@@ -40,7 +40,6 @@ public class Health : MonoBehaviour
         if (damage > 0) {
             if (health <= 0) {
                 onDeath.Invoke();
-                rewardee.AddExp(rewardAmount);
             }
             else if (health > 0) {
                 onTakeDamage.Invoke();

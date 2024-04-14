@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5178219157356751072}
   - component: {fileID: 1670841429521065809}
   - component: {fileID: 2688431589039372783}
+  - component: {fileID: 5798441794147279014}
   m_Layer: 6
   m_Name: PoisonCloud
   m_TagString: Untagged
@@ -196,6 +197,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.5
+--- !u!210 &5798441794147279014
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107581794563841030}
+  m_Enabled: 1
+  m_SortingLayerID: -1127688691
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &6683043121675269031
 GameObject:
   m_ObjectHideFlags: 0

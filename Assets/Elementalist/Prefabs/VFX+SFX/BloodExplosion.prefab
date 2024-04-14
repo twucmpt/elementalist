@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5178219157356751072}
   - component: {fileID: -4253177210402446947}
   - component: {fileID: -5889143719480863859}
+  - component: {fileID: -2785220951822011829}
   m_Layer: 0
   m_Name: BloodExplosion
   m_TagString: Untagged
@@ -199,6 +200,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!210 &-2785220951822011829
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107581794563841030}
+  m_Enabled: 1
+  m_SortingLayerID: -1127688691
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1001 &1143810291355517714
 PrefabInstance:
   m_ObjectHideFlags: 0
