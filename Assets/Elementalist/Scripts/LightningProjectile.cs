@@ -22,14 +22,7 @@ public class LightningProjectile : Projectile
 
     void DoTriggerStuff(Collider2D collider) {
         if (collider.transform == target) {
-            float multiplier = 1f;
-            for (int i = 0; i < collider.transform.childCount; i++) {
-                if (collider.transform.GetChild(i).GetComponent<WetEffect>() != null) {
-                    multiplier = 2f;
-                    break;
-                }
-            }
-            collider.gameObject.SendMessage("DealDamage", (stats.GetStat(StatType.Damage) * multiplier, DamageType.Lightning));
+            collider.gameObject.SendMessage("DealDamage", (stats.GetStat(StatType.Damage), DamageType.Lightning));
             target = FindClosestEnemy();
         }
     }
