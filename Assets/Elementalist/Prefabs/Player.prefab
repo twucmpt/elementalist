@@ -377,8 +377,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180d46fce1ecd704fa575fee1ca875a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invicinbilityCooldown: 0.5
+  invicinbility: 0
+  resistances: []
   maxHealth: 10
   health: 10
+  rewardAmount: 0
+  rewardee: {fileID: 0}
   onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -486,7 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 1
   elementals:
-  - prefab: {fileID: 7759062376692369138, guid: 2724bb905876b1b40a998ae1aaa099c2, type: 3}
+  - type: 0
     cooldown: 0
     level: 1
   spawnAnimation: {fileID: 3355102901899904990, guid: 31c9448230c5d5448ae380f6439c5b30, type: 3}
