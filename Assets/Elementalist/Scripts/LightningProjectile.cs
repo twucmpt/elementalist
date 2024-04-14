@@ -13,16 +13,23 @@ public class LightningProjectile : Projectile
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.transform == target) {
-            collider.gameObject.SendMessage("DealDamage", stats.GetStat(StatType.Damage));
-            target = FindClosestEnemy();
-            count -= 1;
-        }
+        DoTriggerStuff(collider);
     }
     void OnTriggerStay2D(Collider2D collider)
     {
+        DoTriggerStuff(collider);
+    }
+
+    void DoTriggerStuff(Collider2D collider) {
         if (collider.transform == target) {
-            collider.gameObject.SendMessage("DealDamage", stats.GetStat(StatType.Damage));
+            float multiplier = 1f;
+            for (int i = 0; i < collider.transform.childCount; i++) {
+                if (collider.transform.GetChild(i).GetComponent<WetEffect>() != null) {
+                    multiplier = 2f;
+                    break;
+                }
+            }
+            collider.gameObject.SendMessage("DealDamage", stats.GetStat(StatType.Damage) * multiplier);
             target = FindClosestEnemy();
         }
     }
