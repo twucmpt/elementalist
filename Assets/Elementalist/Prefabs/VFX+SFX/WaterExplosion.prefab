@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5178219157356751072}
   - component: {fileID: -3721177468079410200}
   - component: {fileID: 8557758670024844531}
+  - component: {fileID: 8483813791723604245}
   m_Layer: 0
   m_Name: WaterExplosion
   m_TagString: Untagged
@@ -197,6 +198,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!210 &8483813791723604245
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107581794563841030}
+  m_Enabled: 1
+  m_SortingLayerID: -1127688691
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1001 &231519548117151580
 PrefabInstance:
   m_ObjectHideFlags: 0

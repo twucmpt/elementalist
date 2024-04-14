@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5178219157356751072}
   - component: {fileID: 994184662085136104}
   - component: {fileID: 7927339585419347358}
+  - component: {fileID: 4391742985184153545}
   m_Layer: 6
   m_Name: ExplosionEffect
   m_TagString: Untagged
@@ -197,6 +198,18 @@ MonoBehaviour:
     level: 1
   damageType: 1
   statusEffectPrefab: {fileID: 3590299013047973950, guid: b351dc12b9d383948a3925cd0571d3b0, type: 3}
+--- !u!210 &4391742985184153545
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107581794563841030}
+  m_Enabled: 1
+  m_SortingLayerID: -1127688691
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1001 &5606080415222519612
 PrefabInstance:
   m_ObjectHideFlags: 0
