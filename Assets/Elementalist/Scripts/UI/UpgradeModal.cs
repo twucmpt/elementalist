@@ -27,20 +27,24 @@ public class UpgradeModal : ModalControl {
 
     // populate the modal with the upgrades
     for (int i = 0; i < children.Count; i++) {
-      // UDT tasks
+      // select tile
       UpgradeDisplayTile newTile = children[i].GetComponent<UpgradeDisplayTile>();
-      Debug.Log(newTile.ToString());
+
+      // set the display info
       newTile.SetDisplay(upgrades[i]);
+      newTile.HideCard();
+
+      // store tile status
       tiles.Add(upgrades[i].type, newTile);
     }
   }
 
   public void SelectUpgrade(ElementalType type) {
     selection = type;
-    tiles[type].Highlight();
+    tiles[type].ShowCard();
     foreach (ElementalType t in tiles.Keys) {
       if (t != type) {
-        tiles[t].Unhighlight();
+        tiles[t].HideCard();
       }
     }
   }

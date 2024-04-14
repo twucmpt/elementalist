@@ -8,6 +8,8 @@ public class UpgradeDisplayTile : UIButton {
   public ElementalType type;
   public UnityEvent<ElementalType> tileClicked;
 
+  public UpgradeModal modal;
+
   public void SetDisplay(ElementalDisplayInfo info) {
     type = info.type;
 
@@ -22,13 +24,18 @@ public class UpgradeDisplayTile : UIButton {
     icon.GetComponentInChildren<Image>().sprite = info.icon;
   }
 
-  public void Highlight() {
+  public void ShowCard() {
     // highlight the tile
     gameObject.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f);
   }
 
-  public void Unhighlight() {
+  public void HideCard() {
     // unhighlight the tile
     gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f);
+  }
+
+  public override void OnPointerClick(UnityEngine.EventSystems.PointerEventData _eventData) {
+    modal.SelectUpgrade(type);
+    tileClicked.Invoke(type);
   }
 }
