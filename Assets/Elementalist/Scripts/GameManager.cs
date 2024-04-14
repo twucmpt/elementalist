@@ -11,6 +11,12 @@ public class GameManager : MonoBehaviour
     void Awake() {
         instance = this;
     }
+
+    public List<DifficultySetting> difficulties;
+
+    public DifficultySetting GetDifficultySetting() {
+        return difficulties[PlayerPrefs.GetInt("Difficulty", 0)];
+    }
 }
 
 public enum DamageType {

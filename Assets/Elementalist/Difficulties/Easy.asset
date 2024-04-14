@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4aced537c1a874cbce25769b4417a8, type: 3}
+  m_Name: Easy
+  m_EditorClassIdentifier: 
+  elementals:
+  - {fileID: 7759062376692369138, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
+  - {fileID: 7759062376692369138, guid: 2724bb905876b1b40a998ae1aaa099c2, type: 3}
+  - {fileID: 3433264806588001381, guid: 44ae7cbd64843374bb3ee8cb43e271a1, type: 3}
+  - {fileID: 3433264806588001381, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
+  - {fileID: 7759062376692369138, guid: 6e61697caaa68124abba386fe9b9e83b, type: 3}
+  - {fileID: 7759062376692369138, guid: 6fc67331b5c50fd49952eb4d9230b487, type: 3}
+  - {fileID: 7759062376692369138, guid: 756bc9ea851af3c4d8a19839bcd62207, type: 3}
+  - {fileID: 7759062376692369138, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
+  enemyDirectorSettings:
+    pointRate: 2.4642766
+    minPoints: 4.642845
+    maxPoints: 100
+    chanceToSpawnWave: 0.001
+    enemyCatalog:
+    - enemy: {fileID: 3717655051758745142, guid: 5b06c9194d8a3484cac5c6c7e44f88b5, type: 3}
+      cost: 1
+      weight: 20
+      minTime: 0
+    - enemy: {fileID: 4959191655480106456, guid: 00cdfe4f6d7463b4c82caafe4e324c52, type: 3}
+      cost: 2
+      weight: 15
+      minTime: 30
+    - enemy: {fileID: 4959191655480106456, guid: cb05b20820cb09f42b8c0afac5e26a5c, type: 3}
+      cost: 4
+      weight: 10
+      minTime: 60
+    - enemy: {fileID: 4959191655480106456, guid: c7ad4313b6a3cc245a45c040c74f62cd, type: 3}
+      cost: 5
+      weight: 2
+      minTime: 120
+    - enemy: {fileID: 4959191655480106456, guid: 91e57e11bf102724ba9809f0f7969c8e, type: 3}
+      cost: 6
+      weight: 5
+      minTime: 60

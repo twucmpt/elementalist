@@ -84,6 +84,7 @@ public class Stats {
 
 public class ElementalCreature : MonoBehaviour
 {
+    public ElementalType elementalType;
 
     [SerializeField]
     private Stats _stats;

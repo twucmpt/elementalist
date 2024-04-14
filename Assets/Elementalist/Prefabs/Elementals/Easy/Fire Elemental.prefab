@@ -123,6 +123,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6153499618662696658, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
+      propertyPath: elementalType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6153499618662696658, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
       propertyPath: scalingStats.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -156,19 +160,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6153499618662696658, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
       propertyPath: scalingStats.Array.data[2].scaleFactor
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6153499618662696658, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
       propertyPath: scalingStats.Array.data[3].scaleFactor
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6153499618662696658, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
       propertyPath: scalingStats.Array.data[4].scaleFactor
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6153499618662696658, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
       propertyPath: scalingStats.Array.data[5].scaleFactor
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6153499618662696658, guid: 2d25add248878f549841f4ef28724dbc, type: 3}
       propertyPath: scalingStats.Array.data[3].scaling.m_PreInfinity

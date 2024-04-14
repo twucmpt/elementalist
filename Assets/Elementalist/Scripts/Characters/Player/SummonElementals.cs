@@ -6,9 +6,13 @@ using UnityEngine;
 
 [Serializable]
 public class Summons {
-    public GameObject prefab;
+    public ElementalType type;
     public float cooldown = float.PositiveInfinity;
     public int level = 1;
+
+    public GameObject prefab {get {
+        return GameManager.instance.GetDifficultySetting().elementals.Find(e => e.GetComponent<ElementalCreature>().elementalType == type);
+    }}
 }
 
 public class SummonElementals : MonoBehaviour
@@ -51,11 +55,11 @@ public class SummonElementals : MonoBehaviour
     }
  
     public void UpsertElemental(GameObject prefab) {
-        Summons elemental = elementals.Find(e => e.prefab == prefab);
+        Summons elemental = elementals.Find(e => e.prefab.GetComponent<ElementalCreature>().elementalType == prefab.GetComponent<ElementalCreature>().elementalType);
         if (elemental == null) {
             ElementalCreature creature = prefab.GetComponent<ElementalCreature>();
             elementals.Add( new Summons { 
-                prefab = prefab,
+                type = creature.elementalType,
                 cooldown = creature.stats.GetStat(StatType.Cooldown, 1),
                 level = 1
             });

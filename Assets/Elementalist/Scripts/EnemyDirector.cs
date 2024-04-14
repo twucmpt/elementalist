@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,27 +10,43 @@ public class EnemyCatalogEntry {
     public float minTime;
 }
 
+
+[Serializable]
+public record EnemyDirectorSettings {
+    public float initalPointRate;
+    public float initalMinPoints;
+    public float maxPoints;
+    public float chanceToSpawnWave;
+    public List<EnemyCatalogEntry> enemyCatalog;
+}
+
 public class EnemyDirector : MonoBehaviour
 {
     public float points;
     public float pointRate;
     public float minPoints;
-    public float maxPoints;
-    public float chanceToSpawnWave;
-    public List<EnemyCatalogEntry> enemyCatalog;
+    public EnemyDirectorSettings settings;
     public PlayerLeveling playerLeveling;
     public Camera mainCamera;
     private float time = 0;
 
     void Start() {
-        enemyCatalog.Sort(delegate(EnemyCatalogEntry e1, EnemyCatalogEntry e2) { return e1.cost.CompareTo(e2.cost); });
+        OnDifficultyChanged();
+        settings.enemyCatalog.Sort(delegate(EnemyCatalogEntry e1, EnemyCatalogEntry e2) { return e1.cost.CompareTo(e2.cost); });
+    }
+
+    public void OnDifficultyChanged() {
+        var prevSettings = settings;
+        settings = GameManager.instance.GetDifficultySetting().enemyDirectorSettings with {};
+        pointRate += settings.initalPointRate - prevSettings.initalPointRate;
+        minPoints += settings.initalMinPoints - prevSettings.initalMinPoints;
     }
 
     void Update()
     {
         time += Time.deltaTime;
         points += pointRate * Time.deltaTime;
-        if (points > minPoints & (points > maxPoints | Random.Range(0f,1f) <= chanceToSpawnWave)) {
+        if (points > minPoints & (points > settings.maxPoints | UnityEngine.Random.Range(0f,1f) <= settings.chanceToSpawnWave)) {
             SpawnWave();
         }
 
@@ -40,7 +57,7 @@ public class EnemyDirector : MonoBehaviour
     }
 
     void SpawnWave() {
-        int enemiesPerWave = Random.Range(1,6);
+        int enemiesPerWave = UnityEngine.Random.Range(1,6);
         while (points > minPoints & enemiesPerWave > 0) {
             EnemyCatalogEntry selectedEnemy = SelectEnemy();
             if (selectedEnemy == null) break;
@@ -62,15 +79,15 @@ public class EnemyDirector : MonoBehaviour
 
     EnemyCatalogEntry SelectEnemy() {
         float totalWeight = 0f;
-        foreach (EnemyCatalogEntry enemy in enemyCatalog) {
+        foreach (EnemyCatalogEntry enemy in settings.enemyCatalog) {
             if (enemy.cost > points) break;
             totalWeight += enemy.weight;
         }
         if (totalWeight == 0f) return null;
 
         float currentWeight = 0f;
-        float chosenWeight = Random.Range(0f, totalWeight);
-        foreach (EnemyCatalogEntry enemy in enemyCatalog) {
+        float chosenWeight = UnityEngine.Random.Range(0f, totalWeight);
+        foreach (EnemyCatalogEntry enemy in settings.enemyCatalog) {
             currentWeight += enemy.weight;
             if (currentWeight >= chosenWeight) return enemy;
         }
@@ -81,7 +98,7 @@ public class EnemyDirector : MonoBehaviour
 
   private Vector3 GetRandomOffscreenPosition()
   {
-    float randomSide = Random.Range(0.0f, 1.0f);
+    float randomSide = UnityEngine.Random.Range(0.0f, 1.0f);
     float randomX, randomY;
 
     // Choose a random side of the screen
@@ -89,24 +106,24 @@ public class EnemyDirector : MonoBehaviour
     {
       // Left side
       randomX = mainCamera.ViewportToWorldPoint(new Vector3(0f, 0.5f, 0f)).x - 1.0f;
-      randomY = Random.Range(mainCamera.ViewportToWorldPoint(new Vector3(0f, 0f, 0f)).y, mainCamera.ViewportToWorldPoint(new Vector3(0f, 1f, 0f)).y);
+      randomY = UnityEngine.Random.Range(mainCamera.ViewportToWorldPoint(new Vector3(0f, 0f, 0f)).y, mainCamera.ViewportToWorldPoint(new Vector3(0f, 1f, 0f)).y);
     }
     else if (randomSide < 0.5f)
     {
       // Right side
       randomX = mainCamera.ViewportToWorldPoint(new Vector3(1f, 0.5f, 0f)).x + 1.0f;
-      randomY = Random.Range(mainCamera.ViewportToWorldPoint(new Vector3(0f, 0f, 0f)).y, mainCamera.ViewportToWorldPoint(new Vector3(0f, 1f, 0f)).y);
+      randomY = UnityEngine.Random.Range(mainCamera.ViewportToWorldPoint(new Vector3(0f, 0f, 0f)).y, mainCamera.ViewportToWorldPoint(new Vector3(0f, 1f, 0f)).y);
     }
     else if (randomSide < 0.75f)
     {
       // Top side
-      randomX = Random.Range(mainCamera.ViewportToWorldPoint(new Vector3(0f, 0.5f, 0f)).x, mainCamera.ViewportToWorldPoint(new Vector3(1f, 0.5f, 0f)).x);
+      randomX = UnityEngine.Random.Range(mainCamera.ViewportToWorldPoint(new Vector3(0f, 0.5f, 0f)).x, mainCamera.ViewportToWorldPoint(new Vector3(1f, 0.5f, 0f)).x);
       randomY = mainCamera.ViewportToWorldPoint(new Vector3(0f, 1f, 0f)).y + 1.0f;
     }
     else
     {
       // Bottom side
-      randomX = Random.Range(mainCamera.ViewportToWorldPoint(new Vector3(0f, 0.5f, 0f)).x, mainCamera.ViewportToWorldPoint(new Vector3(1f, 0.5f, 0f)).x);
+      randomX = UnityEngine.Random.Range(mainCamera.ViewportToWorldPoint(new Vector3(0f, 0.5f, 0f)).x, mainCamera.ViewportToWorldPoint(new Vector3(1f, 0.5f, 0f)).x);
       randomY = mainCamera.ViewportToWorldPoint(new Vector3(0f, 0f, 0f)).y - 1.0f;
     }
 

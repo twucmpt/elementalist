@@ -33,7 +33,9 @@ public class ElementalDisplayInfo {
 public class CodexEntry {
     public ElementalType type;
 
-    public GameObject prefab;
+    public GameObject prefab {get {
+        return GameManager.instance.GetDifficultySetting().elementals.Find(e => e.GetComponent<ElementalCreature>().elementalType == type);
+    }}
 
     // elemental display info - destructured to work in unity editor
     public int maxLevel;

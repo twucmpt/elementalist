@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: elementals.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: elementals.Array.data[0].level
@@ -687,6 +687,34 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 75
       objectReference: {fileID: 0}
+    - target: {fileID: 8526057588315891150, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
+      propertyPath: OnDifficultyChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526057588315891150, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
+      propertyPath: OnDifficultyChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526057588315891150, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
+      propertyPath: OnDifficultyChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2090680142}
+    - target: {fileID: 8526057588315891150, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
+      propertyPath: OnDifficultyChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526057588315891150, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
+      propertyPath: OnDifficultyChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnDifficultyChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526057588315891150, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
+      propertyPath: OnDifficultyChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnemyDirector, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526057588315891150, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
+      propertyPath: OnDifficultyChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -879,6 +907,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f25527e422f00a49bd25ee1f999991b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2090680142 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+  m_PrefabInstance: {fileID: 5634803144770235624}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d9c3ffed02ee24980cfea099bcebab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &5206719547547667320

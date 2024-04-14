@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class SelectDifficulty : MonoBehaviour
 {
+    public UnityEvent OnDifficultyChanged;
     public List<Toggle> options;
 
     void Start() {
@@ -31,5 +33,6 @@ public class SelectDifficulty : MonoBehaviour
         }
         PlayerPrefs.SetInt("Difficulty", i);
         options[i].interactable = false;
+        OnDifficultyChanged.Invoke();
     }
 }

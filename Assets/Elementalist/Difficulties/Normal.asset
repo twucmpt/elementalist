@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4aced537c1a874cbce25769b4417a8, type: 3}
+  m_Name: Normal
+  m_EditorClassIdentifier: 
+  elementals:
+  - {fileID: 7120962373928071252, guid: 0a02e0a1dda5ddc40a72eff4b72773ec, type: 3}
+  - {fileID: 7403736536839754952, guid: c6f6d994e996c6447befc40457c6f316, type: 3}
+  - {fileID: 2774822700451827238, guid: b9fbac2f41165034da71d81eb6d72371, type: 3}
+  - {fileID: 8294070453895345768, guid: 04af4e7663b9c6e4e87ed4d68e8d01df, type: 3}
+  - {fileID: 2421746153279746935, guid: e4270c5aada5fcc43b971297a96008c1, type: 3}
+  - {fileID: 7461976349521286121, guid: 3079ad04b76c74444b9087ca4795f811, type: 3}
+  - {fileID: 343221075790881788, guid: 5f733fa0e1cb4ea4b86afc2e1fceba03, type: 3}
+  - {fileID: 8165249198103657269, guid: f50482cc1b7beeb4d93804988d55126a, type: 3}
+  enemyDirectorSettings:
+    pointRate: 2
+    minPoints: 0
+    maxPoints: 100
+    chanceToSpawnWave: 0.001
+    enemyCatalog:
+    - enemy: {fileID: 7424788225463633287, guid: a23c2004c7d883643882447f7bc29d8f, type: 3}
+      cost: 1
+      weight: 20
+      minTime: 0
+    - enemy: {fileID: 8741413393254423447, guid: afa41e783dcd4ac4d94e251aca47c674, type: 3}
+      cost: 2
+      weight: 15
+      minTime: 0
+    - enemy: {fileID: 9205959024853202597, guid: b5639a059d100ee46baceb6bcbf1a4ce, type: 3}
+      cost: 4
+      weight: 10
+      minTime: 0
+    - enemy: {fileID: 6374899971856510020, guid: 14fa6ed346e9122419c40e3f8c57d982, type: 3}
+      cost: 5
+      weight: 2
+      minTime: 0
+    - enemy: {fileID: 4487237601914830013, guid: 9ed8773b98215334892f83568d65d66e, type: 3}
+      cost: 6
+      weight: 5
+      minTime: 0
