@@ -6,6 +6,10 @@ public class SpawnPrefab : MonoBehaviour
 {
     public GameObject prefab;
     public void Spawn() {
-        Instantiate(prefab, transform.position, Quaternion.identity);
+        GameObject obj = Instantiate(prefab, transform.position, Quaternion.identity);
+        try {
+            obj.GetComponent<Projectile>().stats = gameObject.GetComponent<ElementalCreature>().stats;
+        }
+        catch {}
     }
 }
