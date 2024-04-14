@@ -2,15 +2,16 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+
 public enum ElementalType { 
     Fire,
     Ice, 
-    //Water, // unimplemented
+    Water,
     Earth,
     Air,
-    //Light, // unimplemented
-    //Dark // unimplemented
+    Lightning
 } 
 
 // information about an elemental to be shown in UI
@@ -52,16 +53,20 @@ public class UpgradeManager : MonoBehaviour {
     //}
 
     public List<ElementalDisplayInfo> GenerateUpgrades() {
-        Debug.Log("Generating upgrades");
-        return Codex
-        .FindAll(entry => !CurrentElementals.ContainsKey(entry.type) || CurrentElementals[entry.type] != entry.maxLevel)
-        .ConvertAll(entry => new ElementalDisplayInfo {
-            type = entry.type,
-            maxLevel = entry.maxLevel,
-            description = entry.description,
-            name = entry.name,
-            icon = entry.icon
-        });
+        
+        List<ElementalDisplayInfo> validElements = Codex
+            .FindAll(entry => !CurrentElementals.ContainsKey(entry.type) || CurrentElementals[entry.type] != entry.maxLevel)
+            .ConvertAll(entry => new ElementalDisplayInfo {
+                type = entry.type,
+                maxLevel = entry.maxLevel,
+                description = entry.description,
+                name = entry.name,
+                icon = entry.icon
+            });
+
+        validElements.Shuffle();
+
+        return validElements.Take(4).ToList();
     }
 
     public void UpsertElemental(ElementalType type) {
