@@ -46,7 +46,7 @@ public class MapGenerator : MonoBehaviour
     }
 
     void LoadChunk(Vector2Int pos) {
-        System.Random rand = new System.Random(pos.GetHashCode());
+        System.Random rand = new System.Random(pos.ToString().GetHashCode());
         int i = rand.Next(0, mapChunks.Count);
         Vector2 worldPod = GetWorldPos(pos);
         GameObject chunk = Instantiate(mapChunks[i], worldPod, Quaternion.identity);

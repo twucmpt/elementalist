@@ -102,6 +102,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   mapChunks:
   - {fileID: 6852370326254779284, guid: efbc6f868d7ea3145b6718f9f8e6e53f, type: 3}
+  - {fileID: 6852370326254779284, guid: 0a514e9955c7c7040af14253a291e708, type: 3}
   chunkSize: 64
 --- !u!114 &564047682217288801
 MonoBehaviour:
