@@ -2,17 +2,20 @@ using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class UpgradeModal : ModalControl {
-  public bool isOpen;
   //self reference, this is okay i guess
   public ModalControl upgradeModal;
-  public GameObject upgradeDisplayTilePrefab;
+  public UnityEvent<ElementalType> upsertElemental;
 
   private ElementalType selection;
   private Dictionary<ElementalType, UpgradeDisplayTile> tiles = new Dictionary<ElementalType, UpgradeDisplayTile>();
 
+
   public void TriggerUpgrade(List<ElementalDisplayInfo> upgrades) {
+    tiles.Clear();
+
     // open self
     upgradeModal.OpenModal();
 
@@ -47,5 +50,13 @@ public class UpgradeModal : ModalControl {
         tiles[t].HideCard();
       }
     }
+  }
+
+  public void ConfirmUpgrade() {
+    // upgrade the player
+    upsertElemental.Invoke(selection);
+
+    // close the modal
+    CloseModal();
   }
 }

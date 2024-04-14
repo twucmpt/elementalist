@@ -33,6 +33,7 @@ public class SummonElementals : MonoBehaviour
     }
 
     void SpawnElemental(GameObject prefab) {
+        Debug.Log("Spawning " + prefab.name + "at level " + prefab.GetComponent<ElementalCreature>().stats.level);
         Vector3 pos = transform.position + Vector3.right * transform.localScale.x * distance;
         GameObject elemental = Instantiate(prefab, pos, Quaternion.identity);
         elemental.SetActive(false);
@@ -48,12 +49,18 @@ public class SummonElementals : MonoBehaviour
         elemental.SetActive(true);
     }
  
-    public void UpsertElemental(ElementalType type) {
-        //Summons newElemental = new Summons();
-        //newElemental.prefab = prefab;
-        //newElemental.cooldown = prefab.GetComponent<ElementalCreature>().stats.GetStat(StatType.Cooldown);
-        //elementals.Add(newElemental);
-        Console.WriteLine("Upserting " + type);
+    public void UpsertElemental(GameObject prefab) {
+        Summons elemental = elementals.Find(e => e.prefab == prefab);
+        if (elemental == null) {
+            elementals.Add( new Summons { 
+                prefab = prefab,
+                cooldown = prefab.GetComponent<ElementalCreature>().stats.GetStat(StatType.Cooldown)
+            });
+        }
+        else {
+            ElementalCreature creature = elemental.prefab.GetComponent<ElementalCreature>();
+            creature.levelUp();
+        }
     }
 
 }

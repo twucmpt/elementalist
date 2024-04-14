@@ -810,6 +810,30 @@ PrefabInstance:
       propertyPath: upgradeModal
       value: 
       objectReference: {fileID: 869285830}
+    - target: {fileID: 1039716586252898408, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
+      propertyPath: upsertElemental.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039716586252898408, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
+      propertyPath: upsertElemental.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1399541077}
+    - target: {fileID: 1039716586252898408, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
+      propertyPath: upsertElemental.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039716586252898408, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
+      propertyPath: upsertElemental.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpsertElemental
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039716586252898408, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
+      propertyPath: upsertElemental.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UpgradeManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039716586252898408, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
+      propertyPath: upsertElemental.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1051492550869361332, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1409,6 +1433,18 @@ PrefabInstance:
     - target: {fileID: 7129906686318763609, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -9.469999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793842010682133730, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
+      propertyPath: buttonClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1508661133}
+    - target: {fileID: 7793842010682133730, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
+      propertyPath: buttonClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConfirmUpgrade
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793842010682133730, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
+      propertyPath: buttonClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UpgradeModal, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7836295251282915344, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
       propertyPath: m_AnchorMax.y
