@@ -5,6 +5,10 @@ using UnityEngine.Events;
 
 [Serializable]
 public class Resistance {
+    public Resistance(DamageType damageType, float multiplier) {
+        this.damageType = damageType;
+        this.multiplier = multiplier;
+    }
     public DamageType damageType;
     public float multiplier = 1;
 }

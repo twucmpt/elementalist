@@ -1,22 +1,14 @@
 public class WetEffect : StatusEffect {
+    private Resistance resistanceFire;
+    private Resistance weaknessLightning;
     void Start() {
-        foreach(Resistance resistance in health.resistances) {
-            if (resistance.damageType == DamageType.Fire) {
-                resistance.multiplier -= 0.5f;
-            }
-            else if (resistance.damageType == DamageType.Lightning) {
-                resistance.multiplier += 1f;
-            }
-        }
+        resistanceFire = new Resistance(DamageType.Fire, 0.5f);
+        weaknessLightning = new Resistance(DamageType.Lightning, 0.5f);
+        health.resistances.Add(resistanceFire);
+        health.resistances.Add(weaknessLightning);
     }
     void OnDestroy() {
-        foreach(Resistance resistance in health.resistances) {
-            if (resistance.damageType == DamageType.Fire) {
-                resistance.multiplier += 0.5f;
-            }
-            else if (resistance.damageType == DamageType.Lightning) {
-                resistance.multiplier -= 1f;
-            }
-        }
+        health.resistances.Remove(resistanceFire);
+        health.resistances.Remove(weaknessLightning);
     }
 }
