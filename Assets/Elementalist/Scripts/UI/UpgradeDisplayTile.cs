@@ -34,6 +34,7 @@ public class UpgradeDisplayTile : UIButton {
   }
 
   public override void OnPointerClick(UnityEngine.EventSystems.PointerEventData _eventData) {
-    modal.SelectUpgrade(type);
+    if(type != ElementalType.None)
+      modal.SelectUpgrade(type);
   }
 }
