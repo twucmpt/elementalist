@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 3532766852602962768}
   - component: {fileID: 780212302460733560}
   - component: {fileID: 564060107389421990}
+  - component: {fileID: 1155498907834113815}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
@@ -232,6 +233,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: die
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1155498907834113815}
+        m_TargetAssemblyTypeName: SpawnXP, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: die
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564060107389421990}
+        m_TargetAssemblyTypeName: UnityEngine.Rendering.SortingGroup, UnityEngine
+        m_MethodName: set_sortingLayerName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MidBackground
           m_BoolArgument: 0
         m_CallState: 2
   onTakeDamage:
@@ -441,3 +466,16 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 1
+--- !u!114 &1155498907834113815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8571035290254059641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484c794a9970324409ac7f6dd55fb773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2223365076634598429, guid: 6420bfeabb2ca854aaf58501f4dcefa3, type: 3}
