@@ -83,8 +83,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa8c581b94ab614ebafb2b81fd12e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  origin: {fileID: 0}
   cooldown: Infinity
+  dotRate: 1
 --- !u!198 &400998965016943114
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -722,7 +722,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 0
     donutRadius: 0.2
-    m_Position: {x: 0, y: -0.65, z: 0}
+    m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: -90, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0

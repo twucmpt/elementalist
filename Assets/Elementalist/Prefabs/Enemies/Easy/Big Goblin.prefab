@@ -89,7 +89,10 @@ PrefabInstance:
       value: Big Goblin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7132251436037968632, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+    - {fileID: 3898318937606709365, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+    - {fileID: 4918920374539779761, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}

@@ -38,7 +38,7 @@ public class SummonElementals : MonoBehaviour
     }
 
     void SpawnElemental(Summons elementalSummon) {
-        Vector3 pos = transform.position + Vector3.right * transform.localScale.x * distance;
+        Vector3 pos = transform.position + Vector3.left * transform.localScale.x * distance;
         GameObject elemental = Instantiate(elementalSummon.prefab, pos, Quaternion.identity);
         elemental.SetActive(false);
         elemental.GetComponent<ElementalCreature>().stats.level = elementalSummon.level;

@@ -465,7 +465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8656522925563801548, guid: e509867be4f82f246a95eca1ee5a2d61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.68
+      value: -0.095
       objectReference: {fileID: 0}
     - target: {fileID: 8656522925563801548, guid: e509867be4f82f246a95eca1ee5a2d61, type: 3}
       propertyPath: m_LocalPosition.z
@@ -607,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4357351810918520840, guid: d6690c8a416d60d40a83a0ef96994663, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.233
+      value: 0.35200006
       objectReference: {fileID: 0}
     - target: {fileID: 4357351810918520840, guid: d6690c8a416d60d40a83a0ef96994663, type: 3}
       propertyPath: m_LocalPosition.z
@@ -648,10 +648,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4357351810918520841, guid: d6690c8a416d60d40a83a0ef96994663, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 763465891125981972}
   m_SourcePrefab: {fileID: 100100000, guid: d6690c8a416d60d40a83a0ef96994663, type: 3}
 --- !u!4 &5516029778947072456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4357351810918520840, guid: d6690c8a416d60d40a83a0ef96994663, type: 3}
   m_PrefabInstance: {fileID: 8139328034179774912}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5516029778947072457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4357351810918520841, guid: d6690c8a416d60d40a83a0ef96994663, type: 3}
+  m_PrefabInstance: {fileID: 8139328034179774912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!210 &763465891125981972
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5516029778947072457}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 1

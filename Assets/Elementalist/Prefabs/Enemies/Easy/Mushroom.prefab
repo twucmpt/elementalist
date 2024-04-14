@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4720975194734229003, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4723107735738678597, guid: f8b30c2afe165d645b54d500a9c30862, type: 3}
     - target: {fileID: 5814753784433791644, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -100,6 +104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom
       objectReference: {fileID: 0}
+    - target: {fileID: 8828858993574159418, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bc4aea5eb876be145b2f4570b0e7138b, type: 2}
     - target: {fileID: 8953466058416811462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
       propertyPath: m_Controller
       value: 
