@@ -20,6 +20,8 @@ public record EnemyDirectorSettings {
 
     public float maxPoints;
     public float chanceToSpawnWave;
+
+    public float maxPointRate;
     public List<EnemyCatalogEntry> enemyCatalog;
 }
 
@@ -50,8 +52,8 @@ public class EnemyDirector : MonoBehaviour
             SpawnWave();
         }
 
-        pointRate = settings.initalPointRate + settings.pointRateMultiplier * time * time;
-        minPoints = settings.initalMinPoints + settings.minPointsMultiplier * time * time;
+        pointRate = Math.Min(settings.maxPointRate, settings.initalPointRate + settings.pointRateMultiplier * time * time);
+        minPoints = Math.Min(settings.maxPoints, settings.initalMinPoints + settings.minPointsMultiplier * time * time);
 
     }
 
