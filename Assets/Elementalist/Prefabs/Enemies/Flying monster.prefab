@@ -17,12 +17,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: rewardee
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
       propertyPath: maxHealth
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
       propertyPath: rewardAmount
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4254099888220866628, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
       propertyPath: scalingStats.Array.data[0].scaleFactor

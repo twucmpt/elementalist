@@ -30,7 +30,7 @@ public class PlayerLeveling : MonoBehaviour {
 
     // leveling curve defined here
     private int expToLevel() {
-        return 20 * Level + 1 * Level + 1;
+        return 150 * Level + 1 * Level + 1;
     }
 
     public void AddExp(float exp) {
@@ -38,6 +38,10 @@ public class PlayerLeveling : MonoBehaviour {
         if(expToLevel() < this.exp) {
             Level++;
         }
+    }
+
+    public int GetScore() {
+        return (int)exp;
     }
 
     // i know it says percent but it's actually in the range [0-1]
