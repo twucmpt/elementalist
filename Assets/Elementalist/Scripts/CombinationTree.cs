@@ -20,6 +20,9 @@ public static class CombinationTree
   public static ElementalCombination[] combinations = new ElementalCombination[]
   {
     new ElementalCombination { type1 = ElementalType.Water, type2 = ElementalType.Earth, result = ElementalType.Nature },
+    new ElementalCombination { type1 = ElementalType.Water, type2 = ElementalType.Air, result = ElementalType.Ice },
+    new ElementalCombination { type1 = ElementalType.Water, type2 = ElementalType.Fire, result = ElementalType.Blood },
+    new ElementalCombination { type1 = ElementalType.Air, type2 = ElementalType.Fire, result = ElementalType.Lightning },
   };
 
   public static List<ElementalCombination> getPossibleCombinations(ElementalType[] types)

@@ -12,7 +12,8 @@ public enum ElementalType {
     Earth,
     Air,
     Lightning,
-    Nature
+    Nature,
+    Blood
 } 
 
 // information about an elemental to be shown in UI

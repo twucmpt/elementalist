@@ -69,18 +69,23 @@ MonoBehaviour:
   - enemy: {fileID: 8571035290254059641, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
     cost: 1
     weight: 2
+    minTime: 0
   - enemy: {fileID: 4959191655480106456, guid: cb05b20820cb09f42b8c0afac5e26a5c, type: 3}
     cost: 4
     weight: 1
+    minTime: 0
   - enemy: {fileID: 4959191655480106456, guid: c7ad4313b6a3cc245a45c040c74f62cd, type: 3}
     cost: 5
     weight: 3
+    minTime: 0
   - enemy: {fileID: 4959191655480106456, guid: 91e57e11bf102724ba9809f0f7969c8e, type: 3}
     cost: 6
     weight: 2
+    minTime: 0
   - enemy: {fileID: 4959191655480106456, guid: 00cdfe4f6d7463b4c82caafe4e324c52, type: 3}
     cost: 2
     weight: 1
+    minTime: 0
   mainCamera: {fileID: 0}
 --- !u!114 &4745897306370685228
 MonoBehaviour:
@@ -113,7 +118,7 @@ MonoBehaviour:
   Codex:
   - type: 0
     prefab: {fileID: 3433264806588001381, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
-    maxLevel: 7
+    maxLevel: 4
     description: This dude's hot as hell
     name: Fire
     icon: {fileID: 21300000, guid: 07f1626437c34cd4f91851a0a0bc51d5, type: 3}
@@ -124,24 +129,24 @@ MonoBehaviour:
     description: This dude's cold as hell
     name: Ice
     icon: {fileID: 21300000, guid: 98abc6e7a7db4774f89ae113295256bd, type: 3}
-    isCombination: 0
+    isCombination: 1
   - type: 4
     prefab: {fileID: 7759062376692369138, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
-    maxLevel: 7
+    maxLevel: 4
     description: This dude's air as hell
     name: Air
     icon: {fileID: 21300000, guid: 8467f003c056e804c8d5e4c914abce1e, type: 3}
     isCombination: 0
   - type: 3
     prefab: {fileID: 3433264806588001381, guid: 44ae7cbd64843374bb3ee8cb43e271a1, type: 3}
-    maxLevel: 2
+    maxLevel: 4
     description: This dude's earth as hell
     name: Earth
     icon: {fileID: 21300000, guid: 60a5ceff1b9f91e44ba837c2f13ca147, type: 3}
     isCombination: 0
   - type: 2
     prefab: {fileID: 7759062376692369138, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
-    maxLevel: 1
+    maxLevel: 4
     description: This dude's wet as hell
     name: Water
     icon: {fileID: 21300000, guid: 40d161cd4f7d45f40ad4f27ee7f6532a, type: 3}
@@ -152,13 +157,20 @@ MonoBehaviour:
     description: This dude's lit as hell
     name: Lightning
     icon: {fileID: 21300000, guid: 3ad45e5643fdb3f4f892d2bb316d8847, type: 3}
-    isCombination: 0
+    isCombination: 1
   - type: 6
     prefab: {fileID: 7759062376692369138, guid: 756bc9ea851af3c4d8a19839bcd62207, type: 3}
     maxLevel: 7
     description: This dude's natty as hell
     name: Nature
     icon: {fileID: 21300000, guid: ba6f1f77c81c1f243a2aa20fc893af83, type: 3}
+    isCombination: 1
+  - type: 7
+    prefab: {fileID: 7759062376692369138, guid: 2724bb905876b1b40a998ae1aaa099c2, type: 3}
+    maxLevel: 7
+    description: This dude's bloody as hell
+    name: Blood
+    icon: {fileID: 21300000, guid: 3e04b1d31d5c1c64ca2ede54d1a07984, type: 3}
     isCombination: 1
   player: {fileID: 0}
   modal: {fileID: 0}
