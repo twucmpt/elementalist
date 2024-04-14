@@ -625,6 +625,66 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[1].cost
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[2].cost
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[3].cost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[4].cost
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[1].enemy
+      value: 
+      objectReference: {fileID: 4959191655480106456, guid: 00cdfe4f6d7463b4c82caafe4e324c52, type: 3}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[2].enemy
+      value: 
+      objectReference: {fileID: 4959191655480106456, guid: cb05b20820cb09f42b8c0afac5e26a5c, type: 3}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[3].enemy
+      value: 
+      objectReference: {fileID: 4959191655480106456, guid: c7ad4313b6a3cc245a45c040c74f62cd, type: 3}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[4].enemy
+      value: 
+      objectReference: {fileID: 4959191655480106456, guid: 91e57e11bf102724ba9809f0f7969c8e, type: 3}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[2].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[3].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[4].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[1].minTime
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[2].minTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[3].minTime
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: enemyCatalog.Array.data[4].minTime
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

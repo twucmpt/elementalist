@@ -6,6 +6,7 @@ public class EnemyCatalogEntry {
     public GameObject enemy;
     public float cost;
     public float weight;
+    public float minTime;
 }
 
 public class EnemyDirector : MonoBehaviour
@@ -17,6 +18,7 @@ public class EnemyDirector : MonoBehaviour
     public float chanceToSpawnWave;
     public List<EnemyCatalogEntry> enemyCatalog;
     public Camera mainCamera;
+    private float time = 0;
 
     void Start() {
         enemyCatalog.Sort(delegate(EnemyCatalogEntry e1, EnemyCatalogEntry e2) { return e1.cost.CompareTo(e2.cost); });
@@ -24,6 +26,7 @@ public class EnemyDirector : MonoBehaviour
 
     void Update()
     {
+        time += Time.deltaTime;
         points += pointRate * Time.deltaTime;
         if (points > minPoints & (points > maxPoints | Random.Range(0f,1f) <= chanceToSpawnWave)) {
             SpawnWave();
@@ -39,6 +42,7 @@ public class EnemyDirector : MonoBehaviour
         int enemiesPerWave = Random.Range(1,6);
         while (points > minPoints & enemiesPerWave > 0) {
             EnemyCatalogEntry selectedEnemy = SelectEnemy();
+            if (selectedEnemy.minTime > time) continue;
             if (selectedEnemy == null) break;
             int quantity = System.Math.Min((int)(points/selectedEnemy.cost),3);
             for (int i = 0; i < quantity; i++) {
