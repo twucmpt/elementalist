@@ -6,9 +6,16 @@ public class PlayerLeveling : MonoBehaviour {
  
     float exp = 0;
 
-    void Update() {
-        AddExp(Time.deltaTime);
+    void Awake() {
+        Debug.Log("PlayerLeveling awake");
+
+        // start with 1 level
+        AddExp(expToLevel() + 1);
     }
+
+    //void Update() {
+    //    AddExp(Time.deltaTime);
+    //}
 
     private int level = 0;
     // level should be calculated based on exp
@@ -23,7 +30,7 @@ public class PlayerLeveling : MonoBehaviour {
 
     // leveling curve defined here
     private int expToLevel() {
-        return Level + 1 * Level + 1 / 2;
+        return 20 * Level + 1 * Level + 1;
     }
 
     public void AddExp(float exp) {

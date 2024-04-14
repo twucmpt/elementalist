@@ -13,6 +13,8 @@ public class Health : MonoBehaviour
     public List<Resistance> resistances;
     public int maxHealth;
     public float health;
+    public int rewardAmount;
+    public PlayerLeveling rewardee;
     public UnityEvent onDeath;
     public UnityEvent onTakeDamage;
 
@@ -31,6 +33,7 @@ public class Health : MonoBehaviour
         if (damage > 0) {
             if (health <= 0) {
                 onDeath.Invoke();
+                rewardee.AddExp(rewardAmount);
             }
             else if (health > 0) {
                 onTakeDamage.Invoke();
@@ -39,5 +42,9 @@ public class Health : MonoBehaviour
         else {
             onHeal.Invoke();
         }
+    }
+
+    public void SetRewardee(PlayerLeveling rewardee) {
+        this.rewardee = rewardee;
     }
 }

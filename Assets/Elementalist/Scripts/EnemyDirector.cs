@@ -17,6 +17,7 @@ public class EnemyDirector : MonoBehaviour
     public float maxPoints;
     public float chanceToSpawnWave;
     public List<EnemyCatalogEntry> enemyCatalog;
+    public PlayerLeveling playerLeveling;
     public Camera mainCamera;
     private float time = 0;
 
@@ -44,6 +45,7 @@ public class EnemyDirector : MonoBehaviour
             EnemyCatalogEntry selectedEnemy = SelectEnemy();
             if (selectedEnemy == null) break;
             if (selectedEnemy.minTime > time) continue;
+            selectedEnemy.enemy.GetComponent<Health>().SetRewardee(playerLeveling);
             int quantity = System.Math.Min((int)(points/selectedEnemy.cost),3);
             for (int i = 0; i < quantity; i++) {
                 enemiesPerWave -= 1;
