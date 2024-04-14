@@ -17,7 +17,7 @@ public class Health : MonoBehaviour
     public float invicinbilityCooldown;
     public float invicinbility = 0;
     public List<Resistance> resistances;
-    public int maxHealth;
+    public float maxHealth;
     public float health;
     public int rewardAmount;
     public PlayerLeveling rewardee;

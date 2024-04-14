@@ -17,6 +17,26 @@ public class GameManager : MonoBehaviour
     public DifficultySetting GetDifficultySetting() {
         return difficulties[PlayerPrefs.GetInt("Difficulty", 0)];
     }
+
+    void Start() {
+        OnDifficultyChange();
+    }
+
+    public void OnDifficultyChange() {
+        DifficultySetting setting = GetDifficultySetting();
+
+        // Player Speed
+        player.GetComponent<PlayerMovement>().moveSpeed = setting.playerSpeed;
+
+        // Player Health
+        Health health = player.GetComponent<Health>();
+        var ratio = health.health / health.maxHealth;
+        health.maxHealth = setting.playerHealth;
+        health.health = health.maxHealth * ratio;
+
+        //Player Invicibility
+        health.invicinbilityCooldown = setting.playerInvicinbility;
+    }
 }
 
 public enum DamageType {

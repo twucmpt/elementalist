@@ -49,3 +49,6 @@ MonoBehaviour:
       cost: 6
       weight: 5
       minTime: 80
+  playerSpeed: 400
+  playerHealth: 30
+  playerInvicinbility: 0

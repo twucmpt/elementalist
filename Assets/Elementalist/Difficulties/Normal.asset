@@ -22,8 +22,10 @@ MonoBehaviour:
   - {fileID: 343221075790881788, guid: 5f733fa0e1cb4ea4b86afc2e1fceba03, type: 3}
   - {fileID: 8165249198103657269, guid: f50482cc1b7beeb4d93804988d55126a, type: 3}
   enemyDirectorSettings:
-    pointRate: 2
-    minPoints: 0
+    initalPointRate: 0.1
+    pointRateMultiplier: 0.0001
+    initalMinPoints: 3
+    minPointsMultiplier: 0.0005
     maxPoints: 100
     chanceToSpawnWave: 0.001
     enemyCatalog:
@@ -47,3 +49,6 @@ MonoBehaviour:
       cost: 6
       weight: 5
       minTime: 0
+  playerSpeed: 400
+  playerHealth: 10
+  playerInvicinbility: 0

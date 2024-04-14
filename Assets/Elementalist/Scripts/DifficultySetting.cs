@@ -6,4 +6,7 @@ public class DifficultySetting : ScriptableObject
 {
     public List<GameObject> elementals;
     public EnemyDirectorSettings enemyDirectorSettings;
+    public float playerSpeed;
+    public float playerHealth;
+    public float playerInvicinbility;
 }
