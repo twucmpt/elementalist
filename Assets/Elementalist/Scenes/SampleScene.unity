@@ -431,7 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbc5ceb311792d4aba368a7c903dfe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1480069925}
+  player: {fileID: 0}
 --- !u!114 &869285830 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2838497712182203695, guid: b7d86c0db5db9d64187485f3746bcfd1, type: 3}
@@ -1046,6 +1046,10 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: playerLeveling
+      value: 
+      objectReference: {fileID: 1480069926}
     - target: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
       propertyPath: enemyCatalog.Array.data[1].cost
       value: 2

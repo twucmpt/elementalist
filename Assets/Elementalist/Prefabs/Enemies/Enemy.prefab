@@ -272,6 +272,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   health: 5
+  rewardAmount: 2
+  rewardee: {fileID: 0}
   onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -338,6 +340,9 @@ MonoBehaviour:
           m_StringArgument: takeDamage
           m_BoolArgument: 0
         m_CallState: 2
+  onHeal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8076089229606366463
 MonoBehaviour:
   m_ObjectHideFlags: 0
