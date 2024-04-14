@@ -51,4 +51,12 @@ public class Health : MonoBehaviour
     public void SetRewardee(PlayerLeveling rewardee) {
         this.rewardee = rewardee;
     }
+
+    public void SetHealth(float val) {
+        health = Math.Min(val, maxHealth);
+    }
+
+    public void ResetHealthToMax() {
+        SetHealth(maxHealth);
+    }
 }

@@ -28,6 +28,50 @@ PrefabInstance:
       propertyPath: rewardAmount
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: resistances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: resistances.Array.data[0].damageType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: resistances.Array.data[0].multiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: -1534794392465627321}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: OnDeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: ReviveSkele, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_StringArgument
+      value: die
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4254099888220866628, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
       propertyPath: scalingStats.Array.data[0].scaleFactor
       value: 250
@@ -95,5 +139,137 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8571035290254059641, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: -1534794392465627321}
   m_SourcePrefab: {fileID: 100100000, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+--- !u!114 &129465736922632759 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3741099036276205462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+  m_PrefabInstance: {fileID: 3612161393804391841}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959191655480106456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180d46fce1ecd704fa575fee1ca875a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &226887636319180529 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3532766852602962768, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+  m_PrefabInstance: {fileID: 3612161393804391841}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959191655480106456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1dd5e0ca447b0746931759dff1c76f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &371094699965944639 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3965029212189304478, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+  m_PrefabInstance: {fileID: 3612161393804391841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4057494770744262397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 752070735125564252, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+  m_PrefabInstance: {fileID: 3612161393804391841}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959191655480106456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6a6b494585e8947a324d383e9918a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4959191655480106456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8571035290254059641, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+  m_PrefabInstance: {fileID: 3612161393804391841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1534794392465627321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959191655480106456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f17a296d54ac04f98ad6b04b626588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnReviveAnimation:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5648042072459204711}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: revive
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnRevive:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 129465736922632759}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: ResetHealthToMax
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 226887636319180529}
+        m_TargetAssemblyTypeName: SetTag, Assembly-CSharp
+        m_MethodName: Set
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Enemy
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4057494770744262397}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Enemy
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 371094699965944639}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine
+        m_MethodName: set_simulated
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Enemy
+          m_BoolArgument: 1
+        m_CallState: 2
+  canRevive: 1
+  delay: 3
+  animationDelay: 1
+--- !u!95 &5648042072459204711 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8953466058416811462, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
+  m_PrefabInstance: {fileID: 3612161393804391841}
+  m_PrefabAsset: {fileID: 0}
