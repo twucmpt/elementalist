@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4254099888220866628, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
       propertyPath: scalingStats.Array.data[0].scaleFactor
-      value: 380
+      value: 280
       objectReference: {fileID: 0}
     - target: {fileID: 4633737131109088563, guid: 456508c9c52c90049977af4fdc5a8c4c, type: 3}
       propertyPath: m_LocalPosition.x

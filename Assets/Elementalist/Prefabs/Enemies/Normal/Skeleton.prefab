@@ -12,9 +12,13 @@ PrefabInstance:
       propertyPath: rewardee
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 660165375999622629, guid: 00cdfe4f6d7463b4c82caafe4e324c52, type: 3}
+      propertyPath: scalingStats.Array.data[0].scaleFactor
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 4959191655480106456, guid: 00cdfe4f6d7463b4c82caafe4e324c52, type: 3}
       propertyPath: m_Name
-      value: Skeleton Variant
+      value: Skeleton
       objectReference: {fileID: 0}
     - target: {fileID: 8245720350342269074, guid: 00cdfe4f6d7463b4c82caafe4e324c52, type: 3}
       propertyPath: m_LocalPosition.x

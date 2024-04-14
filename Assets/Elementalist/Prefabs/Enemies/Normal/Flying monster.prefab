@@ -12,9 +12,13 @@ PrefabInstance:
       propertyPath: rewardee
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 660165375999622629, guid: c7ad4313b6a3cc245a45c040c74f62cd, type: 3}
+      propertyPath: scalingStats.Array.data[0].scaleFactor
+      value: 380
+      objectReference: {fileID: 0}
     - target: {fileID: 4959191655480106456, guid: c7ad4313b6a3cc245a45c040c74f62cd, type: 3}
       propertyPath: m_Name
-      value: Flying monster Variant
+      value: Flying monster
       objectReference: {fileID: 0}
     - target: {fileID: 8245720350342269074, guid: c7ad4313b6a3cc245a45c040c74f62cd, type: 3}
       propertyPath: m_LocalPosition.x

@@ -8,9 +8,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 129465736922632759, guid: cb05b20820cb09f42b8c0afac5e26a5c, type: 3}
+      propertyPath: rewardee
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 660165375999622629, guid: cb05b20820cb09f42b8c0afac5e26a5c, type: 3}
+      propertyPath: scalingStats.Array.data[0].scaleFactor
+      value: 280
+      objectReference: {fileID: 0}
     - target: {fileID: 4959191655480106456, guid: cb05b20820cb09f42b8c0afac5e26a5c, type: 3}
       propertyPath: m_Name
-      value: Big Goblin Variant
+      value: Big Goblin
       objectReference: {fileID: 0}
     - target: {fileID: 8245720350342269074, guid: cb05b20820cb09f42b8c0afac5e26a5c, type: 3}
       propertyPath: m_LocalPosition.x

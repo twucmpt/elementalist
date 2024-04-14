@@ -12,9 +12,13 @@ PrefabInstance:
       propertyPath: rewardee
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 660165375999622629, guid: 91e57e11bf102724ba9809f0f7969c8e, type: 3}
+      propertyPath: scalingStats.Array.data[0].scaleFactor
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 4959191655480106456, guid: 91e57e11bf102724ba9809f0f7969c8e, type: 3}
       propertyPath: m_Name
-      value: Mushroom Variant
+      value: Mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 8245720350342269074, guid: 91e57e11bf102724ba9809f0f7969c8e, type: 3}
       propertyPath: m_LocalPosition.x

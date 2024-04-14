@@ -50,7 +50,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3717655051758745142, guid: 5b06c9194d8a3484cac5c6c7e44f88b5, type: 3}
       propertyPath: m_Name
-      value: Goblin Variant
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542943103217482201, guid: 5b06c9194d8a3484cac5c6c7e44f88b5, type: 3}
+      propertyPath: rewardee
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109715463403017739, guid: 5b06c9194d8a3484cac5c6c7e44f88b5, type: 3}
+      propertyPath: scalingStats.Array.data[0].scaleFactor
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
