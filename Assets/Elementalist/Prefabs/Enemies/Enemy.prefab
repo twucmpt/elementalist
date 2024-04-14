@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 6943017562661679473}
   - component: {fileID: 4254099888220866628}
   - component: {fileID: 3532766852602962768}
+  - component: {fileID: 780212302460733560}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -270,6 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180d46fce1ecd704fa575fee1ca875a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resistances: []
   maxHealth: 5
   health: 5
   rewardAmount: 2
@@ -505,5 +507,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1dd5e0ca447b0746931759dff1c76f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &780212302460733560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8571035290254059641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db02a9622328bc04db1d33bc050f003e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

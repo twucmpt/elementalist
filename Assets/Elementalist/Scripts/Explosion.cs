@@ -20,6 +20,6 @@ public class Explosion : Projectile
     {
         Debug.Log($"Collided with {collider}");
         collider.gameObject.SendMessage("DealDamage", new Tuple<float,DamageType>(stats.GetStat(StatType.Damage), damageType));
-        if (statusEffectPrefab != null) collider.gameObject.SendMessage("ApplyStatusEffect", (stats, statusEffectPrefab));
+        if (statusEffectPrefab != null) collider.gameObject.SendMessage("ApplyStatusEffect", new Tuple<Stats,GameObject>(stats, statusEffectPrefab));
     }
 }
