@@ -26,6 +26,8 @@ public class ElementalDisplayInfo {
     public string name;
     public Sprite icon;
     public bool isCombination = false;
+
+    public int currentLevel;
 }
 
 // associate prefabs with ElementalTypes so we can pass prefabs to the SummonElementals script
@@ -66,7 +68,8 @@ public class UpgradeManager : MonoBehaviour {
                 maxLevel = entry.maxLevel,
                 description = entry.description,
                 name = entry.name,
-                icon = entry.icon
+                icon = entry.icon,
+                currentLevel = CurrentElementals.ContainsKey(entry.type) ? CurrentElementals[entry.type] : 0,
             });
 
         validElements.Shuffle();
