@@ -23,9 +23,9 @@ MonoBehaviour:
   - {fileID: 7759062376692369138, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
   enemyDirectorSettings:
     initalPointRate: 0.1
-    pointRateMultiplier: 0.001
+    pointRateMultiplier: 0.0001
     initalMinPoints: 3
-    minPointsMultiplier: 0.001
+    minPointsMultiplier: 0.0005
     maxPoints: 100
     chanceToSpawnWave: 0.001
     enemyCatalog:
