@@ -18,7 +18,6 @@ public class Explosion : Projectile
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log($"Collided with {collider}");
         collider.gameObject.SendMessage("DealDamage", new Tuple<float,DamageType>(stats.GetStat(StatType.Damage), damageType));
         if (statusEffectPrefab != null) collider.gameObject.SendMessage("ApplyStatusEffect", new Tuple<Stats,GameObject>(stats, statusEffectPrefab));
     }

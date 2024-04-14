@@ -54,7 +54,7 @@ public class Stats {
     public int level = 1;
     public Dictionary<StatType, Stat> stats;
 
-    public float GetStat(StatType type, int? level = null) {
+    virtual public float GetStat(StatType type, int? level = null) {
         return stats[type].GetValue(level ?? this.level, maxLevel);
     }
 
