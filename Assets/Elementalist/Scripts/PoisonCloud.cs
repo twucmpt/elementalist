@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class PoisonCloud : Projectile
@@ -15,7 +15,7 @@ public class PoisonCloud : Projectile
 
     void DoTriggerStuff(Collider2D collider) {
         if (collider.gameObject.CompareTag("Enemy")) {
-            collider.gameObject.SendMessage("DealDamage", (stats.GetStat(StatType.Damage), DamageType.Poison));
+            collider.gameObject.SendMessage("DealDamage", new Tuple<float,DamageType>(stats.GetStat(StatType.Damage), DamageType.Poison));
         }
     }
 }

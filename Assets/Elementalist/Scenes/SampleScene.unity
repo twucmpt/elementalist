@@ -133,8 +133,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: elementals.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
+      propertyPath: elementals.Array.data[0].level
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
+      propertyPath: elementals.Array.data[1].level
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
+      propertyPath: elementals.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 3433264806588001381, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
+    - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
+      propertyPath: elementals.Array.data[1].prefab
+      value: 
+      objectReference: {fileID: 7759062376692369138, guid: 756bc9ea851af3c4d8a19839bcd62207, type: 3}
     - target: {fileID: 2799320739524696832, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: menu
       value: 
