@@ -132,10 +132,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
-      propertyPath: elementals.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: elementals.Array.data[0].level
       value: 3
       objectReference: {fileID: 0}
@@ -151,6 +147,14 @@ PrefabInstance:
       propertyPath: elementals.Array.data[1].prefab
       value: 
       objectReference: {fileID: 7759062376692369138, guid: 756bc9ea851af3c4d8a19839bcd62207, type: 3}
+    - target: {fileID: 2519519305328469418, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
+      propertyPath: OnLevelUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1399541077}
+    - target: {fileID: 2519519305328469418, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
+      propertyPath: OnLevelUp.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1948064661}
     - target: {fileID: 2799320739524696832, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: menu
       value: 
@@ -274,13 +278,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8571035290254059641, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1480069926}
-    - targetCorrespondingSourceObject: {fileID: 8571035290254059641, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1480069941}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
 --- !u!1 &213947844 stripped
 GameObject:
@@ -403,7 +401,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 1808101201196867513, guid: 2c7bde5e583f3234c8de7d7669e820f3, type: 2}
-  m_audioClip: {fileID: 8300000, guid: f0625243eb4cbe54db6d87340f0c2b50, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f22b1e4929f82d942939d65e9b440a8c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1061,11 +1059,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4633737131109088563, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
   m_PrefabInstance: {fileID: 213947843}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1480069926
+--- !u!114 &1480069926 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2519519305328469418, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
+  m_PrefabInstance: {fileID: 213947843}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213947844}
   m_Enabled: 1
@@ -1073,33 +1070,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3041e82b5d2a6eb498f2465ae0a820e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnLevelUp:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1399541077}
-        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
-        m_MethodName: TriggerUpgrade
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1948064661}
-        m_TargetAssemblyTypeName: StatusManager, Assembly-CSharp
-        m_MethodName: SetLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1480069929 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
@@ -1120,18 +1090,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 180d46fce1ecd704fa575fee1ca875a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1480069941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213947844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92558c9ea84d3ea4ca6a17bcac1841c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1508661133 stripped
