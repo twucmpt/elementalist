@@ -72,6 +72,15 @@ MonoBehaviour:
   - enemy: {fileID: 4959191655480106456, guid: cb05b20820cb09f42b8c0afac5e26a5c, type: 3}
     cost: 4
     weight: 1
+  - enemy: {fileID: 4959191655480106456, guid: c7ad4313b6a3cc245a45c040c74f62cd, type: 3}
+    cost: 5
+    weight: 3
+  - enemy: {fileID: 4959191655480106456, guid: 91e57e11bf102724ba9809f0f7969c8e, type: 3}
+    cost: 6
+    weight: 2
+  - enemy: {fileID: 4959191655480106456, guid: 00cdfe4f6d7463b4c82caafe4e324c52, type: 3}
+    cost: 2
+    weight: 1
   mainCamera: {fileID: 0}
 --- !u!114 &4745897306370685228
 MonoBehaviour:
