@@ -10,7 +10,7 @@ public class UpgradeModal : ModalControl {
   public ModalControl upgradeModal;
   public UnityEvent<ElementalType> upsertElemental;
 
-  private ElementalType selection;
+  private ElementalType selection = ElementalType.None;
   private Dictionary<ElementalType, UpgradeDisplayTile> tiles = new Dictionary<ElementalType, UpgradeDisplayTile>();
 
   private readonly static ElementalDisplayInfo blankTemplate = new ElementalDisplayInfo {
@@ -63,10 +63,14 @@ public class UpgradeModal : ModalControl {
   }
 
   public void ConfirmUpgrade() {
-    // upgrade the player
-    upsertElemental.Invoke(selection);
+    if (selection != ElementalType.None) {
+      // upgrade the player
+      upsertElemental.Invoke(selection);
 
-    // close the modal
-    CloseModal();
+      // close the modal
+      CloseModal();
+
+      selection = ElementalType.None;
+    }
   }
 }

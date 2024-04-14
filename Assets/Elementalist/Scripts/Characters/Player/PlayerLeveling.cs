@@ -33,9 +33,9 @@ public class PlayerLeveling : MonoBehaviour {
     public int Score { get { return score - startingExp; } }
 
     // leveling curve defined here
-    private int expToLevel() {
-        return 150 * Level * Level;
-    }
+        private int expToLevel() {
+            return 90 * Level * Level;
+        }
 
     public void AddExp(float exp) {
         this.exp += exp;
