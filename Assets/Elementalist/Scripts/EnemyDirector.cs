@@ -14,7 +14,10 @@ public class EnemyCatalogEntry {
 [Serializable]
 public record EnemyDirectorSettings {
     public float initalPointRate;
+    public float pointRateMultiplier = 0.01f;
     public float initalMinPoints;
+    public float minPointsMultiplier = 0.1f;
+
     public float maxPoints;
     public float chanceToSpawnWave;
     public List<EnemyCatalogEntry> enemyCatalog;
@@ -51,8 +54,8 @@ public class EnemyDirector : MonoBehaviour
         }
 
         // Temp scaling mechnaism
-        pointRate += Time.deltaTime * 0.01f;
-        minPoints += Time.deltaTime * 0.1f;
+        pointRate += Time.deltaTime * settings.pointRateMultiplier;
+        minPoints += Time.deltaTime * settings.minPointsMultiplier;
 
     }
 
