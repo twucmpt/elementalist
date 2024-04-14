@@ -13,10 +13,6 @@ public class ModalControl : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            CloseModal();
-        }
     }
 
     public void OpenModal()

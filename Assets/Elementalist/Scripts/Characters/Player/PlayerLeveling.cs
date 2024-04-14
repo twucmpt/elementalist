@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-
-
 public class PlayerLeveling : MonoBehaviour {
     public UnityEvent OnLevelUp;
  
@@ -12,9 +10,9 @@ public class PlayerLeveling : MonoBehaviour {
         AddExp(Time.deltaTime);
     }
 
-    private int level = 1;
+    private int level = 0;
     // level should be calculated based on exp
-    int Level { 
+    public int Level { 
         get { return level; } 
         set {
             level = value;
@@ -25,7 +23,7 @@ public class PlayerLeveling : MonoBehaviour {
 
     // leveling curve defined here
     private int expToLevel() {
-        return Level * Level / 2;
+        return Level + 1 * Level + 1 / 2;
     }
 
     public void AddExp(float exp) {
