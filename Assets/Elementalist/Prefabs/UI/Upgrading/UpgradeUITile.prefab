@@ -142,6 +142,7 @@ MonoBehaviour:
   tileClicked:
     m_PersistentCalls:
       m_Calls: []
+  modal: {fileID: 0}
 --- !u!1 &2081296979253214110
 GameObject:
   m_ObjectHideFlags: 0
