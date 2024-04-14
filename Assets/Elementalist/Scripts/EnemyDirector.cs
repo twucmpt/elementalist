@@ -39,10 +39,7 @@ public class EnemyDirector : MonoBehaviour
     }
 
     public void OnDifficultyChanged() {
-        var prevSettings = settings;
         settings = GameManager.instance.GetDifficultySetting().enemyDirectorSettings with {};
-        pointRate += settings.initalPointRate - prevSettings.initalPointRate;
-        minPoints += settings.initalMinPoints - prevSettings.initalMinPoints;
     }
 
     void Update()
@@ -53,9 +50,8 @@ public class EnemyDirector : MonoBehaviour
             SpawnWave();
         }
 
-        // Temp scaling mechnaism
-        pointRate += Time.deltaTime * settings.pointRateMultiplier;
-        minPoints += Time.deltaTime * settings.minPointsMultiplier;
+        pointRate = settings.initalPointRate + settings.pointRateMultiplier * time * time;
+        minPoints = settings.initalMinPoints + settings.minPointsMultiplier * time * time;
 
     }
 

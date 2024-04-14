@@ -64,10 +64,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d9c3ffed02ee24980cfea099bcebab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 0
+  points: 2
+  pointRate: 0
+  minPoints: 0
   settings:
-    pointRate: 0
-    minPoints: 0
+    initalPointRate: 0
+    pointRateMultiplier: 0.01
+    initalMinPoints: 0
+    minPointsMultiplier: 0.1
     maxPoints: 0
     chanceToSpawnWave: 0
     enemyCatalog: []

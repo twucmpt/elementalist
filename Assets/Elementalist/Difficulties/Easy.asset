@@ -22,8 +22,10 @@ MonoBehaviour:
   - {fileID: 7759062376692369138, guid: 756bc9ea851af3c4d8a19839bcd62207, type: 3}
   - {fileID: 7759062376692369138, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
   enemyDirectorSettings:
-    pointRate: 2.4642766
-    minPoints: 4.642845
+    initalPointRate: 0.1
+    pointRateMultiplier: 0.001
+    initalMinPoints: 3
+    minPointsMultiplier: 0.001
     maxPoints: 100
     chanceToSpawnWave: 0.001
     enemyCatalog:
@@ -34,16 +36,16 @@ MonoBehaviour:
     - enemy: {fileID: 4959191655480106456, guid: 00cdfe4f6d7463b4c82caafe4e324c52, type: 3}
       cost: 2
       weight: 15
-      minTime: 30
+      minTime: 60
     - enemy: {fileID: 4959191655480106456, guid: cb05b20820cb09f42b8c0afac5e26a5c, type: 3}
       cost: 4
       weight: 10
-      minTime: 60
+      minTime: 120
     - enemy: {fileID: 4959191655480106456, guid: c7ad4313b6a3cc245a45c040c74f62cd, type: 3}
       cost: 5
       weight: 2
-      minTime: 120
+      minTime: 150
     - enemy: {fileID: 4959191655480106456, guid: 91e57e11bf102724ba9809f0f7969c8e, type: 3}
       cost: 6
       weight: 5
-      minTime: 60
+      minTime: 80
