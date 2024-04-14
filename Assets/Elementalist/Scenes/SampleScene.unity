@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
+      propertyPath: elementals.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2799320739524696832, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: upgradeModal
       value: 
@@ -561,46 +565,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1480069929}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[2].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 8467f003c056e804c8d5e4c914abce1e, type: 3}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[2].name
-      value: Air
-      objectReference: {fileID: 0}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[2].type
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[3].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 60a5ceff1b9f91e44ba837c2f13ca147, type: 3}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[3].name
-      value: Earth
-      objectReference: {fileID: 0}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[3].type
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[2].prefab
-      value: 
-      objectReference: {fileID: 7759062376692369138, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[3].prefab
-      value: 
-      objectReference: {fileID: 3433264806588001381, guid: 44ae7cbd64843374bb3ee8cb43e271a1, type: 3}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[2].description
-      value: This dude's air as hell
-      objectReference: {fileID: 0}
-    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
-      propertyPath: Codex.Array.data[3].description
-      value: This dude's earth as hell
-      objectReference: {fileID: 0}
     - target: {fileID: 619380518184935237, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
       propertyPath: player
       value: 

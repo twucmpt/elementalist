@@ -8,6 +8,7 @@ using UnityEngine;
 public class Summons {
     public GameObject prefab;
     public float cooldown = float.PositiveInfinity;
+    public int level = 1;
 }
 
 public class SummonElementals : MonoBehaviour
@@ -33,7 +34,6 @@ public class SummonElementals : MonoBehaviour
     }
 
     void SpawnElemental(GameObject prefab) {
-        Debug.Log("Spawning " + prefab.name + "at level " + prefab.GetComponent<ElementalCreature>().stats.level);
         Vector3 pos = transform.position + Vector3.right * transform.localScale.x * distance;
         GameObject elemental = Instantiate(prefab, pos, Quaternion.identity);
         elemental.SetActive(false);
@@ -52,15 +52,20 @@ public class SummonElementals : MonoBehaviour
     public void UpsertElemental(GameObject prefab) {
         Summons elemental = elementals.Find(e => e.prefab == prefab);
         if (elemental == null) {
+            ElementalCreature creature = prefab.GetComponent<ElementalCreature>();
             elementals.Add( new Summons { 
                 prefab = prefab,
-                cooldown = prefab.GetComponent<ElementalCreature>().stats.GetStat(StatType.Cooldown)
+                cooldown = creature.stats.GetStat(StatType.Cooldown, 1),
+                level = 1
             });
         }
         else {
             ElementalCreature creature = elemental.prefab.GetComponent<ElementalCreature>();
-            creature.levelUp();
+            levelUp(elemental);
         }
     }
 
+    public void levelUp(Summons elemental ) {
+        elemental.level = Mathf.Min(elemental.level + 1, elemental.prefab.GetComponent<ElementalCreature>().stats.maxLevel);
+    }
 }

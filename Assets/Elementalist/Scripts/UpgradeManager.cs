@@ -11,7 +11,8 @@ public enum ElementalType {
     Water,
     Earth,
     Air,
-    Lightning
+    Lightning,
+    Nature
 } 
 
 // information about an elemental to be shown in UI
@@ -35,6 +36,7 @@ public class CodexEntry {
     public string description;
     public string name;
     public Sprite icon;
+    public bool isCombination = false;
 }
 
 public class UpgradeManager : MonoBehaviour {
@@ -48,14 +50,11 @@ public class UpgradeManager : MonoBehaviour {
     // update as player levels up
     public Dictionary<ElementalType, int> CurrentElementals = new Dictionary<ElementalType, int> {};
 
-    //public void Awake() {
-    //    TriggerUpgrade();
-    //}
-
     public List<ElementalDisplayInfo> GenerateUpgrades() {
         
         List<ElementalDisplayInfo> validElements = Codex
-            .FindAll(entry => !CurrentElementals.ContainsKey(entry.type) || CurrentElementals[entry.type] != entry.maxLevel)
+            .FindAll(entry => !CurrentElementals.ContainsKey(entry.type) || CurrentElementals[entry.type] != entry.maxLevel) // filter out maxed out elementals
+            .FindAll(entry => !entry.isCombination || CanUpgrade(entry.type)) // filter out combination elementals that can't be upgraded
             .ConvertAll(entry => new ElementalDisplayInfo {
                 type = entry.type,
                 maxLevel = entry.maxLevel,
@@ -79,5 +78,15 @@ public class UpgradeManager : MonoBehaviour {
 
     public void TriggerUpgrade() {
         modal.TriggerUpgrade(GenerateUpgrades());
+    }
+
+    private bool CanUpgrade(ElementalType type) {
+        List<ElementalType> maxxedOutElementals = Codex
+            .FindAll(entry => CurrentElementals.ContainsKey(entry.type) && CurrentElementals[entry.type] == entry.maxLevel)
+            .ConvertAll(entry => entry.type);
+
+        List<ElementalCombination> possibleCombinations = CombinationTree.getPossibleCombinations(maxxedOutElementals.ToArray());
+
+        return possibleCombinations.Exists(combination => combination.result == type);
     }
 }

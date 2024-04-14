@@ -24,7 +24,7 @@ public class PlayerLeveling : MonoBehaviour {
 
     // leveling curve defined here
     private int expToNextLevel() {
-        return 10 * Level * Level;
+        return 10 * (Level * Level / 2);
     }
 
     public void AddExp(float exp) {

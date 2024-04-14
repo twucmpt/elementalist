@@ -13,15 +13,15 @@ public class ElementalCombination
 }
 
 [CreateAssetMenu(fileName = "CombinationTree", menuName = "CombinationTree"), System.Serializable]
-public class CombinationTree
+public static class CombinationTree
 {
 
-  public ElementalCombination[] combinations = new ElementalCombination[]
+  public static ElementalCombination[] combinations = new ElementalCombination[]
   {
-    //new ElementalCombination { type1 = ElementalType.Fire, type2 = ElementalType.Water, result = ElementalType.Air }, // EXAMPLE
+    new ElementalCombination { type1 = ElementalType.Water, type2 = ElementalType.Earth, result = ElementalType.Nature },
   };
 
-  public List<ElementalCombination> getPossibleCombinations(ElementalType[] types)
+  public static List<ElementalCombination> getPossibleCombinations(ElementalType[] types)
   {
     List<ElementalCombination> possibleCombinations = new List<ElementalCombination>();
     foreach (ElementalCombination combination in combinations)

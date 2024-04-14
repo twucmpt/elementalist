@@ -108,35 +108,48 @@ MonoBehaviour:
     description: This dude's hot as hell
     name: Fire
     icon: {fileID: 21300000, guid: 07f1626437c34cd4f91851a0a0bc51d5, type: 3}
+    isCombination: 0
   - type: 1
     prefab: {fileID: 7759062376692369138, guid: 6e61697caaa68124abba386fe9b9e83b, type: 3}
     maxLevel: 7
     description: This dude's cold as hell
     name: Ice
     icon: {fileID: 21300000, guid: 98abc6e7a7db4774f89ae113295256bd, type: 3}
-  - type: 3
-    prefab: {fileID: 3433264806588001381, guid: 44ae7cbd64843374bb3ee8cb43e271a1, type: 3}
-    maxLevel: 7
-    description: This dude's earth as hell
-    name: Earth
-    icon: {fileID: 21300000, guid: 60a5ceff1b9f91e44ba837c2f13ca147, type: 3}
+    isCombination: 0
   - type: 4
     prefab: {fileID: 7759062376692369138, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
     maxLevel: 7
     description: This dude's air as hell
     name: Air
     icon: {fileID: 21300000, guid: 8467f003c056e804c8d5e4c914abce1e, type: 3}
+    isCombination: 0
+  - type: 3
+    prefab: {fileID: 3433264806588001381, guid: 44ae7cbd64843374bb3ee8cb43e271a1, type: 3}
+    maxLevel: 7
+    description: This dude's earth as hell
+    name: Earth
+    icon: {fileID: 21300000, guid: 60a5ceff1b9f91e44ba837c2f13ca147, type: 3}
+    isCombination: 0
   - type: 2
     prefab: {fileID: 7759062376692369138, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
     maxLevel: 7
     description: This dude's wet as hell
     name: Water
     icon: {fileID: 21300000, guid: 40d161cd4f7d45f40ad4f27ee7f6532a, type: 3}
+    isCombination: 0
   - type: 5
     prefab: {fileID: 7759062376692369138, guid: 6fc67331b5c50fd49952eb4d9230b487, type: 3}
     maxLevel: 7
     description: This dude's lit as hell
     name: Lightning
     icon: {fileID: 21300000, guid: 3ad45e5643fdb3f4f892d2bb316d8847, type: 3}
+    isCombination: 0
+  - type: 6
+    prefab: {fileID: 7759062376692369138, guid: 756bc9ea851af3c4d8a19839bcd62207, type: 3}
+    maxLevel: 7
+    description: This dude's natty as hell
+    name: Nature
+    icon: {fileID: 21300000, guid: ba6f1f77c81c1f243a2aa20fc893af83, type: 3}
+    isCombination: 1
   player: {fileID: 0}
   modal: {fileID: 0}
