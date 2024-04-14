@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,9 +20,9 @@ public class DamageOnCollide : MonoBehaviour
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player") & currentCooldown <= 0) {
-            collision.gameObject.SendMessage("DealDamage", (damage, DamageType.Untyped));
+            collision.gameObject.SendMessage("DealDamage", new Tuple<float,DamageType>(damage, DamageType.Untyped));
             currentCooldown = cooldown;
-            if(Random.Range(0, 10) < 2)
+            if(UnityEngine.Random.Range(0, 10) < 2)
                 onAttack2.Invoke();
             else
                 onAttack1.Invoke();

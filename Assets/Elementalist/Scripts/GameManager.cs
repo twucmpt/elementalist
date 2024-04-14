@@ -21,5 +21,6 @@ public enum DamageType {
     Air,
     Lightning,
     Poison,
-    Blood
+    Blood,
+    Ice
 }

@@ -16,7 +16,7 @@ public class DamageOverTimeEffect : StatusEffect {
                     Destroy(gameObject);
                 }
             }
-            health.DealDamage(new Tuple<float, DamageType>(elementalStats.GetStat(StatType.EffectStrength), DamageType.Fire));
+            health.DealDamage(new Tuple<float,DamageType>(elementalStats.GetStat(StatType.EffectStrength), DamageType.Fire));
             currentCooldown = dotRate;
         }
         base.Update();

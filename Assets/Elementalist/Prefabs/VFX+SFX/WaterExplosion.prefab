@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2592724811495022540}
   - component: {fileID: 3440422174752011709}
   - component: {fileID: -5178219157356751072}
+  - component: {fileID: -3721177468079410200}
+  - component: {fileID: 8557758670024844531}
   m_Layer: 0
   m_Name: WaterExplosion
   m_TagString: Untagged
@@ -143,6 +145,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 5
+--- !u!114 &-3721177468079410200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107581794563841030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bc8ff7f9359784382735bbc898b6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats:
+    maxLevel: 7
+    level: 1
+  damageType: 2
+  statusEffectPrefab: {fileID: 3957874196357831519, guid: 370a9221a4afb624086acad13ecc320b, type: 3}
+--- !u!58 &8557758670024844531
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107581794563841030}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1001 &231519548117151580
 PrefabInstance:
   m_ObjectHideFlags: 0

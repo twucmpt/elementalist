@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2592724811495022540}
   - component: {fileID: 3440422174752011709}
   - component: {fileID: -5178219157356751072}
+  - component: {fileID: -4253177210402446947}
+  - component: {fileID: -5889143719480863859}
   m_Layer: 0
   m_Name: BloodExplosion
   m_TagString: Untagged
@@ -145,6 +147,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 5
+--- !u!114 &-4253177210402446947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107581794563841030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bc8ff7f9359784382735bbc898b6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats:
+    maxLevel: 7
+    level: 1
+  damageType: 7
+  statusEffectPrefab: {fileID: 0}
+--- !u!58 &-5889143719480863859
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107581794563841030}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1001 &1143810291355517714
 PrefabInstance:
   m_ObjectHideFlags: 0

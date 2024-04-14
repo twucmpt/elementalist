@@ -5,14 +5,14 @@ public class StatusEffectApplier : MonoBehaviour {
     public void ApplyStatusEffectColliders(ElementalCreature origin, Collider2D[] colliders) {
         foreach (Collider2D collider in colliders) {
             if (collider.gameObject.CompareTag("Enemy")) {
-                ApplyStatusEffect(origin, collider.gameObject);
+                ApplyStatusEffectToTarget(origin, collider.gameObject);
             }
         }
     }
 
-    public void ApplyStatusEffect(ElementalCreature origin, GameObject target) {
+    public void ApplyStatusEffectToTarget(ElementalCreature origin, GameObject target) {
         GameObject statusEffectObj = Instantiate(statusEffect, target.transform);
         StatusEffect effect = statusEffectObj.GetComponent<StatusEffect>();
-        effect.Init(origin);
+        effect.Init(origin.stats);
     }
 }

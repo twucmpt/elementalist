@@ -15,8 +15,8 @@ public class StatusEffect : MonoBehaviour
         if (cooldown <= 0 || health.health <= 0) Destroy(gameObject);
     }
 
-    public void Init(ElementalCreature origin) {
-        elementalStats = origin.stats;
-        cooldown = origin.stats.GetStat(StatType.EffectCooldown);
+    public void Init(Stats stats) {
+        elementalStats = stats;
+        cooldown = stats.GetStat(StatType.EffectCooldown);
     }
 }
