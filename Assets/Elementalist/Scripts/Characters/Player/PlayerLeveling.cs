@@ -6,11 +6,12 @@ public class PlayerLeveling : MonoBehaviour {
  
     float exp = 0;
 
-    void Awake() {
-        Debug.Log("PlayerLeveling awake");
+    int startingExp;
 
+    void Awake() {
         // start with 1 level
-        AddExp(expToLevel() + 1);
+        startingExp = expToLevel() + 1;
+        AddExp(startingExp);
     }
 
     //void Update() {
@@ -27,10 +28,13 @@ public class PlayerLeveling : MonoBehaviour {
             OnLevelUp.Invoke();
         } 
     }
+    
+    private int score = 0;
+    public int Score { get { return score - startingExp; } }
 
     // leveling curve defined here
     private int expToLevel() {
-        return 150 * Level + 1 * Level + 1;
+        return 150 * Level * Level;
     }
 
     public void AddExp(float exp) {
@@ -38,10 +42,7 @@ public class PlayerLeveling : MonoBehaviour {
         if(expToLevel() < this.exp) {
             Level++;
         }
-    }
-
-    public int GetScore() {
-        return (int)exp;
+        score += (int)exp;
     }
 
     // i know it says percent but it's actually in the range [0-1]

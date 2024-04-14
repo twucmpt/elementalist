@@ -14,7 +14,7 @@ public class StatusManager : MonoBehaviour {
   void Update() {
     HealthBar.fillAmount = playerHealth.health / playerHealth.maxHealth;
     ExpBar.fillAmount = playerLeveling.PercentToNextLevel();
-    ScoreText.text = "Score: " + playerLeveling.GetScore();
+    ScoreText.text = "Score: " + playerLeveling.Score;
   }
 
   public void SetLevel() {
