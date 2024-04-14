@@ -54,8 +54,8 @@ public class Stats {
     public int level = 1;
     public Dictionary<StatType, Stat> stats;
 
-    public float GetStat(StatType type) {
-        return stats[type].GetValue(level, maxLevel);
+    public float GetStat(StatType type, int? level = null) {
+        return stats[type].GetValue(level ?? this.level, maxLevel);
     }
 
     public void ApplyMultiplicativeModifier(StatType type, Modifier modifier) {
@@ -94,10 +94,6 @@ public class ElementalCreature : MonoBehaviour
         if (_stats.stats == null) _stats.InitializeScalingStats(scalingStats);
         return _stats;
     }}
-
-    public void levelUp() {
-        _stats.level = Mathf.Min(_stats.level + 1, _stats.maxLevel);
-    }
 
     void Start() {
         if (_stats.stats == null) _stats.InitializeScalingStats(scalingStats);
