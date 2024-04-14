@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class UpgradeDisplayTile : UIButton {
   public ElementalType type;
-  public UnityEvent<ElementalType> tileClicked;
 
   public UpgradeModal modal;
 
@@ -36,6 +35,5 @@ public class UpgradeDisplayTile : UIButton {
 
   public override void OnPointerClick(UnityEngine.EventSystems.PointerEventData _eventData) {
     modal.SelectUpgrade(type);
-    tileClicked.Invoke(type);
   }
 }

@@ -69,7 +69,7 @@ public class UpgradeManager : MonoBehaviour {
             CurrentElementals[type] = 0;
         }
         CurrentElementals[type] += 1;
-        player.UpsertElemental(type);
+        player.UpsertElemental(Codex.Find(entry => entry.type == type).prefab);
     }
 
     public void TriggerUpgrade() {

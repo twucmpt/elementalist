@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -61,7 +60,6 @@ public class EnemyDirector : MonoBehaviour
             if (enemy.cost > points) break;
             totalWeight += enemy.weight;
         }
-        Debug.Log(totalWeight);
         if (totalWeight == 0f) return null;
 
         float currentWeight = 0f;

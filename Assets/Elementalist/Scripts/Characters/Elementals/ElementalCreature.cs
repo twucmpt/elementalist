@@ -95,6 +95,10 @@ public class ElementalCreature : MonoBehaviour
         return _stats;
     }}
 
+    public void levelUp() {
+        _stats.level = Mathf.Min(_stats.level + 1, _stats.maxLevel);
+    }
+
     void Start() {
         if (_stats.stats == null) _stats.InitializeScalingStats(scalingStats);
     }
