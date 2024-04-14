@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6374899971856510020, guid: 14fa6ed346e9122419c40e3f8c57d982, type: 3}
       propertyPath: m_Name
-      value: Flying monster Variant Variant
+      value: Flying monster
       objectReference: {fileID: 0}
     - target: {fileID: 7981515220101298446, guid: 14fa6ed346e9122419c40e3f8c57d982, type: 3}
       propertyPath: m_LocalPosition.x
