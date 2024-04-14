@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour
 
         //Player Invicibility
         health.invicinbilityCooldown = setting.playerInvicinbility;
+
+        // Player Leveling
+         player.GetComponent<PlayerLeveling>().LevelScalingConstant = setting.levelScalingConstant;
     }
 }
 

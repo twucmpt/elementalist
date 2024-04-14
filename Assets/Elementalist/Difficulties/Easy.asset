@@ -53,3 +53,4 @@ MonoBehaviour:
   playerSpeed: 400
   playerHealth: 30
   playerInvicinbility: 0.5
+  levelScalingConstant: 60
