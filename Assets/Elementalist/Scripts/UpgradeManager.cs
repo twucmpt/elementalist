@@ -22,6 +22,7 @@ public class ElementalDisplayInfo {
     public string description;
     public string name;
     public Sprite icon;
+    public bool isCombination = false;
 }
 
 // associate prefabs with ElementalTypes so we can pass prefabs to the SummonElementals script
@@ -69,11 +70,19 @@ public class UpgradeManager : MonoBehaviour {
     }
 
     public void UpsertElemental(ElementalType type) {
+        CodexEntry entry = Codex.Find(entry => entry.type == type);
+
         if(!CurrentElementals.ContainsKey(type)) {
             CurrentElementals[type] = 0;
         }
         CurrentElementals[type] += 1;
-        player.UpsertElemental(Codex.Find(entry => entry.type == type).prefab);
+        player.UpsertElemental(entry.prefab);
+
+        if(entry.isCombination) {
+            Tuple<ElementalType, ElementalType> ingredients = CombinationTree.GetIngredients(type);
+            player.ResetElemental(Codex.Find(entry => entry.type == ingredients.Item1).prefab);
+            player.ResetElemental(Codex.Find(entry => entry.type == ingredients.Item2).prefab);
+        }
     }
 
     public void TriggerUpgrade() {

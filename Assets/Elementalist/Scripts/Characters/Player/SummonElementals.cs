@@ -65,6 +65,13 @@ public class SummonElementals : MonoBehaviour
         }
     }
 
+    public void ResetElemental(GameObject prefab) {
+        Summons elemental = elementals.Find(e => e.prefab == prefab);
+        if (elemental != null) {
+            elementals.Remove(elemental);
+        }
+    }
+
     public void levelUp(Summons elemental ) {
         elemental.level = Mathf.Min(elemental.level + 1, elemental.prefab.GetComponent<ElementalCreature>().stats.maxLevel);
     }

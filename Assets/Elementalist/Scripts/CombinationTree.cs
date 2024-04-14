@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -32,5 +33,10 @@ public static class CombinationTree
       }
     }
     return possibleCombinations;
+  }
+
+  public static Tuple<ElementalType, ElementalType> GetIngredients(ElementalType type)
+  {
+    return new Tuple<ElementalType, ElementalType>(combinations.First(c => c.result == type).type1, combinations.First(c => c.result == type).type2);
   }
 }
