@@ -28,6 +28,7 @@ MonoBehaviour:
     minPointsMultiplier: 0.0005
     maxPoints: 100
     chanceToSpawnWave: 0.001
+    maxPointRate: 6
     enemyCatalog:
     - enemy: {fileID: 3717655051758745142, guid: 5b06c9194d8a3484cac5c6c7e44f88b5, type: 3}
       cost: 1
@@ -51,4 +52,4 @@ MonoBehaviour:
       minTime: 80
   playerSpeed: 400
   playerHealth: 30
-  playerInvicinbility: 0
+  playerInvicinbility: 0.5
