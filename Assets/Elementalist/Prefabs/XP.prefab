@@ -98,6 +98,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  radius: 1
+  magnetSpeed: 10
   scalefactor: 0.02
 --- !u!114 &3944481583833926698
 MonoBehaviour:

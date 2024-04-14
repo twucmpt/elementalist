@@ -7,6 +7,8 @@ public class XP : MonoBehaviour
 {
     public UnityEvent OnXPGather;
     private float _xp;
+    public float radius;
+    public float magnetSpeed;
     public float xp {
         get { return _xp; }
         set {
@@ -29,6 +31,12 @@ public class XP : MonoBehaviour
             GameManager.instance.player.GetComponent<PlayerLeveling>().AddExp(xp);
             OnXPGather.Invoke();
             Destroy(gameObject);
+        }
+    }
+
+    void FixedUpdate() {
+        if (Vector3.Distance(GameManager.instance.player.transform.position, transform.position) < radius) {
+            transform.position = Vector3.MoveTowards(transform.position, GameManager.instance.player.transform.position, Time.fixedDeltaTime * magnetSpeed);
         }
     }
 }
