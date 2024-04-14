@@ -1450,9 +1450,9 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 0.9870182, g: 0.7647059, b: 1, a: 1}
-        key2: {r: 0.7724138, g: 0, b: 0.9411765, a: 0}
-        key3: {r: 0.30593625, g: 0, b: 0.43921566, a: 0}
+        key1: {r: 0.25882354, g: 0, b: 0.5803922, a: 1}
+        key2: {r: 0.25882354, g: 0, b: 0.5803922, a: 0}
+        key3: {r: 0.25882354, g: 0, b: 0.5803922, a: 0}
         key4: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 0}
         key5: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
@@ -1474,7 +1474,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 5
         m_NumAlphaKeys: 3
       minGradient:
@@ -4957,6 +4957,30 @@ PrefabInstance:
       propertyPath: lengthInSec
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5824670795371433368, guid: f6fd568b816c64943a44efc3add3a881, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824670795371433368, guid: f6fd568b816c64943a44efc3add3a881, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824670795371433368, guid: f6fd568b816c64943a44efc3add3a881, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.25882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824670795371433368, guid: f6fd568b816c64943a44efc3add3a881, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.25490198
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824670795371433368, guid: f6fd568b816c64943a44efc3add3a881, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.027450982
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824670795371433368, guid: f6fd568b816c64943a44efc3add3a881, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.15686275
+      objectReference: {fileID: 0}
     - target: {fileID: 5824670795371433373, guid: f6fd568b816c64943a44efc3add3a881, type: 3}
       propertyPath: m_Name
       value: SummonEffect
@@ -5036,7 +5060,7 @@ AudioSource:
   m_GameObject: {fileID: 3355102901899904990}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3134351448794245058, guid: 2c7bde5e583f3234c8de7d7669e820f3, type: 2}
   m_audioClip: {fileID: 8300000, guid: 53cd424bb6864e344815ce15956e7d92, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1

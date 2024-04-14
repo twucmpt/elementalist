@@ -42,8 +42,8 @@ public class EnemyDirector : MonoBehaviour
         int enemiesPerWave = Random.Range(1,6);
         while (points > minPoints & enemiesPerWave > 0) {
             EnemyCatalogEntry selectedEnemy = SelectEnemy();
-            if (selectedEnemy.minTime > time) continue;
             if (selectedEnemy == null) break;
+            if (selectedEnemy.minTime > time) continue;
             int quantity = System.Math.Min((int)(points/selectedEnemy.cost),3);
             for (int i = 0; i < quantity; i++) {
                 enemiesPerWave -= 1;
