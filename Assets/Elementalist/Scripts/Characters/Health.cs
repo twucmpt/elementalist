@@ -8,15 +8,22 @@ public class Health : MonoBehaviour
     public UnityEvent onDeath;
     public UnityEvent onTakeDamage;
 
+    public UnityEvent onHeal;
+
     public void DealDamage(float damage) {
         if (health <= 0) return;
 
         health -= damage;
-        if (health <= 0) {
-            onDeath.Invoke();
+        if (damage > 0) {
+            if (health <= 0) {
+                onDeath.Invoke();
+            }
+            else if (health > 0) {
+                onTakeDamage.Invoke();
+            }
         }
-        else if (health > 0) {
-            onTakeDamage.Invoke();
+        else {
+            onHeal.Invoke();
         }
     }
 }
