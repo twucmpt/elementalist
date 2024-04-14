@@ -11,7 +11,6 @@ public class StatusEffectApplier : MonoBehaviour {
     }
 
     public void ApplyStatusEffect(ElementalCreature origin, GameObject target) {
-        Debug.Log($"Applying status effect {statusEffect.name} to {target.name}.");
         GameObject statusEffectObj = Instantiate(statusEffect, target.transform);
         StatusEffect effect = statusEffectObj.GetComponent<StatusEffect>();
         effect.Init(origin);

@@ -28,15 +28,16 @@ public class SummonElementals : MonoBehaviour
             elemental.cooldown -= Time.deltaTime;
             if (elemental.cooldown <= 0) {
                 elemental.cooldown = elemental.prefab.GetComponent<ElementalCreature>().stats.GetStat(StatType.Cooldown);
-                SpawnElemental(elemental.prefab);
+                SpawnElemental(elemental);
             }
         }
     }
 
-    void SpawnElemental(GameObject prefab) {
+    void SpawnElemental(Summons elementalSummon) {
         Vector3 pos = transform.position + Vector3.right * transform.localScale.x * distance;
-        GameObject elemental = Instantiate(prefab, pos, Quaternion.identity);
+        GameObject elemental = Instantiate(elementalSummon.prefab, pos, Quaternion.identity);
         elemental.SetActive(false);
+        elemental.GetComponent<ElementalCreature>().stats.level = elementalSummon.level;
         Instantiate(spawnAnimation, pos + Vector3.down * 0.1f, Quaternion.identity);
         // Not the best place to do this, but leaving it here for now
         StartCoroutine(DelaySpawn(elemental, 1f));
