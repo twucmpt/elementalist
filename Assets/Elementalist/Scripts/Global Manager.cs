@@ -23,6 +23,6 @@ public class GlobalManager : MonoBehaviour
     }
 
     void LoadAudioSetting(string key) {
-        mixer.SetFloat(key, Mathf.Log10(PlayerPrefs.GetFloat(key, 1f)) * 20);
+        mixer.SetFloat(key, Mathf.Log10(PlayerPrefs.GetFloat(key, 0.75f)) * 20);
     }
 }
