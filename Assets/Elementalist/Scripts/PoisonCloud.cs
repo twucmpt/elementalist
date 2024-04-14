@@ -15,7 +15,7 @@ public class PoisonCloud : Projectile
 
     void DoTriggerStuff(Collider2D collider) {
         if (collider.gameObject.CompareTag("Enemy")) {
-            collider.gameObject.SendMessage("DealDamage", stats.GetStat(StatType.Damage));
+            collider.gameObject.SendMessage("DealDamage", (stats.GetStat(StatType.Damage), DamageType.Poison));
         }
     }
 }

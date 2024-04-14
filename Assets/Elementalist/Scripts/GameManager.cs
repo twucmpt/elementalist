@@ -12,3 +12,14 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 }
+
+public enum DamageType {
+    Untyped,
+    Fire,
+    Water,
+    Earth,
+    Air,
+    Lightning,
+    Poison,
+    Blood
+}

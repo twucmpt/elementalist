@@ -15,7 +15,7 @@ public class BloodPool : Projectile
 
     void DoTriggerStuff(Collider2D collider) {
         if (collider.gameObject.CompareTag("Player")) {
-            collider.gameObject.SendMessage("DealDamage", -stats.GetStat(StatType.EffectStrength));
+            collider.gameObject.SendMessage("DealDamage", (-stats.GetStat(StatType.EffectStrength), DamageType.Untyped));
         }
     }
 }

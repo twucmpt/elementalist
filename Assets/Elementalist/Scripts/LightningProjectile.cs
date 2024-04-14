@@ -29,7 +29,7 @@ public class LightningProjectile : Projectile
                     break;
                 }
             }
-            collider.gameObject.SendMessage("DealDamage", stats.GetStat(StatType.Damage) * multiplier);
+            collider.gameObject.SendMessage("DealDamage", (stats.GetStat(StatType.Damage) * multiplier, DamageType.Lightning));
             target = FindClosestEnemy();
         }
     }

@@ -19,7 +19,7 @@ public class DamageOnCollide : MonoBehaviour
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player") & currentCooldown <= 0) {
-            collision.gameObject.SendMessage("DealDamage", damage);
+            collision.gameObject.SendMessage("DealDamage", (damage, DamageType.Untyped));
             currentCooldown = cooldown;
             if(Random.Range(0, 10) < 2)
                 onAttack2.Invoke();
