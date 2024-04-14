@@ -13,11 +13,13 @@ public enum ElementalType {
     Air,
     Lightning,
     Nature,
-    Blood
+    Blood,
+    None
 } 
 
 // information about an elemental to be shown in UI
 public class ElementalDisplayInfo {
+
     public ElementalType type;
     public int maxLevel;
     public string description;
@@ -56,7 +58,7 @@ public class UpgradeManager : MonoBehaviour {
         
         List<ElementalDisplayInfo> validElements = Codex
             .FindAll(entry => !CurrentElementals.ContainsKey(entry.type) || CurrentElementals[entry.type] != entry.maxLevel) // filter out maxed out elementals
-            .FindAll(entry => !entry.isCombination || CanUpgrade(entry.type)) // filter out combination elementals that can't be upgraded
+            .FindAll(entry => !entry.isCombination || CurrentElementals.ContainsKey(entry.type) || CanCombine(entry.type)) // filter out combination elementals that can't be upgraded
             .ConvertAll(entry => new ElementalDisplayInfo {
                 type = entry.type,
                 maxLevel = entry.maxLevel,
@@ -83,6 +85,8 @@ public class UpgradeManager : MonoBehaviour {
             Tuple<ElementalType, ElementalType> ingredients = CombinationTree.GetIngredients(type);
             player.ResetElemental(Codex.Find(entry => entry.type == ingredients.Item1).prefab);
             player.ResetElemental(Codex.Find(entry => entry.type == ingredients.Item2).prefab);
+            CurrentElementals[ingredients.Item1] = 0;
+            CurrentElementals[ingredients.Item2] = 0;
         }
     }
 
@@ -90,7 +94,7 @@ public class UpgradeManager : MonoBehaviour {
         modal.TriggerUpgrade(GenerateUpgrades());
     }
 
-    private bool CanUpgrade(ElementalType type) {
+    private bool CanCombine(ElementalType type) {        
         List<ElementalType> maxxedOutElementals = Codex
             .FindAll(entry => CurrentElementals.ContainsKey(entry.type) && CurrentElementals[entry.type] == entry.maxLevel)
             .ConvertAll(entry => entry.type);

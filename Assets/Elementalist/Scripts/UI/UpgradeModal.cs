@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
+
 public class UpgradeModal : ModalControl {
   //self reference, this is okay i guess
   public ModalControl upgradeModal;
@@ -12,6 +13,13 @@ public class UpgradeModal : ModalControl {
   private ElementalType selection;
   private Dictionary<ElementalType, UpgradeDisplayTile> tiles = new Dictionary<ElementalType, UpgradeDisplayTile>();
 
+  private readonly static ElementalDisplayInfo blankTemplate = new ElementalDisplayInfo {
+      type = ElementalType.None,
+      maxLevel = 1,
+      description = "",
+      name = "",
+      icon = null
+  };
 
   public void TriggerUpgrade(List<ElementalDisplayInfo> upgrades) {
     tiles.Clear();
@@ -34,11 +42,13 @@ public class UpgradeModal : ModalControl {
       UpgradeDisplayTile newTile = children[i].GetComponent<UpgradeDisplayTile>();
 
       // set the display info
-      newTile.SetDisplay(upgrades[i]);
+      ElementalDisplayInfo info = upgrades.Count > i ? upgrades[i] : blankTemplate;
+      newTile.SetDisplay(info);
       newTile.HideCard();
 
       // store tile status
-      tiles.Add(upgrades[i].type, newTile);
+      if(info.type != ElementalType.None)
+        tiles.Add(info.type, newTile);
     }
   }
 
