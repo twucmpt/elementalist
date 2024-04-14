@@ -98,7 +98,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  scalefactor: 0.015
+  scalefactor: 0.02
 --- !u!114 &3944481583833926698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3f2e5610db5cda34da687e66843a29e8, type: 3}
-  m_Color: {r: 0.8164112, g: 0.8679245, b: 0.12691349, a: 0.3764706}
+  m_Color: {r: 0.8164112, g: 0.8679245, b: 0.12691349, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
