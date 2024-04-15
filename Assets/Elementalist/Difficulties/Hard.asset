@@ -57,3 +57,4 @@ MonoBehaviour:
   playerInvicinbility: 0.01
   levelScalingConstant: 150
   levelScalingOffset: 200
+  scoreMultiplier: 3
