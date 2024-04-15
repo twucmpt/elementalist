@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LightningProjectile : Projectile
 {
     public Transform target;
     public int count = 3;
+    public UnityEvent OnHit;
 
     void Start() {
         target = FindClosestEnemy();
@@ -24,6 +26,7 @@ public class LightningProjectile : Projectile
     void DoTriggerStuff(Collider2D collider) {
         if (collider.transform == target) {
             collider.gameObject.SendMessage("DealDamage", new Tuple<float,DamageType>(stats.GetStat(StatType.Damage), DamageType.Lightning));
+            OnHit.Invoke();
             target = FindClosestEnemy();
         }
     }
