@@ -21,6 +21,7 @@ MonoBehaviour:
   - {fileID: 7759062376692369138, guid: 6fc67331b5c50fd49952eb4d9230b487, type: 3}
   - {fileID: 7759062376692369138, guid: 756bc9ea851af3c4d8a19839bcd62207, type: 3}
   - {fileID: 7759062376692369138, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
+  - {fileID: 7759062376692369138, guid: 4178459911327434ab359f82e0fd0eba, type: 3}
   enemyDirectorSettings:
     initalPointRate: 0.1
     pointRateMultiplier: 0.0001
@@ -28,7 +29,7 @@ MonoBehaviour:
     minPointsMultiplier: 0.0005
     maxPoints: 100
     chanceToSpawnWave: 0.001
-    maxPointRate: 6
+    maxPointRate: 4
     enemyCatalog:
     - enemy: {fileID: 3717655051758745142, guid: 5b06c9194d8a3484cac5c6c7e44f88b5, type: 3}
       cost: 1

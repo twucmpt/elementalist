@@ -48,5 +48,6 @@ public enum DamageType {
     Lightning,
     Poison,
     Blood,
-    Ice
+    Ice,
+    Sand
 }

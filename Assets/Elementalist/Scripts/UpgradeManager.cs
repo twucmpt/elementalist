@@ -14,6 +14,7 @@ public enum ElementalType {
     Lightning,
     Nature,
     Blood,
+    Sand,
     None
 } 
 
