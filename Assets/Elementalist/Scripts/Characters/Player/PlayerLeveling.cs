@@ -8,7 +8,7 @@ public class PlayerLeveling : MonoBehaviour {
 
     int startingExp;
 
-    void Awake() {
+    void Start() {
         // start with 1 level
         startingExp = expToLevel() + 1;
         AddExp(startingExp);
