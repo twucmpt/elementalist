@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5544580512903310109, guid: 4aca5da66fbd52e4abc51840dc79a01c, type: 3}
+      propertyPath: scalingStats.Array.data[3].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544580512903310109, guid: 4aca5da66fbd52e4abc51840dc79a01c, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6474353873858892028, guid: 4aca5da66fbd52e4abc51840dc79a01c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8027031892264863158, guid: 4aca5da66fbd52e4abc51840dc79a01c, type: 3}
       propertyPath: m_Name
-      value: Magma Elemental Variant Variant
+      value: Magma Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

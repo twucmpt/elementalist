@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4907150733953957186, guid: 3079ad04b76c74444b9087ca4795f811, type: 3}
+      propertyPath: scalingStats.Array.data[3].offset
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907150733953957186, guid: 3079ad04b76c74444b9087ca4795f811, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5850874680443946659, guid: 3079ad04b76c74444b9087ca4795f811, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7461976349521286121, guid: 3079ad04b76c74444b9087ca4795f811, type: 3}
       propertyPath: m_Name
-      value: Lightning Elemental Variant Variant
+      value: Lightning Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

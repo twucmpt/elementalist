@@ -10,7 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 343221075790881788, guid: 5f733fa0e1cb4ea4b86afc2e1fceba03, type: 3}
       propertyPath: m_Name
-      value: Nature Elemental Variant Variant
+      value: Nature Elemental
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834081227990568279, guid: 5f733fa0e1cb4ea4b86afc2e1fceba03, type: 3}
+      propertyPath: scalingStats.Array.data[3].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834081227990568279, guid: 5f733fa0e1cb4ea4b86afc2e1fceba03, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3638738960841455286, guid: 5f733fa0e1cb4ea4b86afc2e1fceba03, type: 3}
       propertyPath: m_LocalPosition.x

@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 878932300611273422, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
+      propertyPath: scalingStats.Array.data[0].scaleFactor
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1808565061738985775, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3433264806588001381, guid: c968b674a85184c4f9bbc01a4561dfea, type: 3}
       propertyPath: m_Name
-      value: Fire Elemental Variant
+      value: Fire Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4983421299853392483, guid: c6f6d994e996c6447befc40457c6f316, type: 3}
+      propertyPath: scalingStats.Array.data[3].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983421299853392483, guid: c6f6d994e996c6447befc40457c6f316, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5765561173182202242, guid: c6f6d994e996c6447befc40457c6f316, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7403736536839754952, guid: c6f6d994e996c6447befc40457c6f316, type: 3}
       propertyPath: m_Name
-      value: Blood Elemental Variant Variant
+      value: Blood Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

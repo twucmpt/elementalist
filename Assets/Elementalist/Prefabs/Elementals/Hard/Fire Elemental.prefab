@@ -48,9 +48,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5804442012416792771, guid: 04af4e7663b9c6e4e87ed4d68e8d01df, type: 3}
+      propertyPath: scalingStats.Array.data[3].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804442012416792771, guid: 04af4e7663b9c6e4e87ed4d68e8d01df, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8294070453895345768, guid: 04af4e7663b9c6e4e87ed4d68e8d01df, type: 3}
       propertyPath: m_Name
-      value: Fire Elemental Variant Variant
+      value: Fire Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

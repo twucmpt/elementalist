@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147551334338534876, guid: e4270c5aada5fcc43b971297a96008c1, type: 3}
+      propertyPath: scalingStats.Array.data[3].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 147551334338534876, guid: e4270c5aada5fcc43b971297a96008c1, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1668580612661651005, guid: e4270c5aada5fcc43b971297a96008c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2421746153279746935, guid: e4270c5aada5fcc43b971297a96008c1, type: 3}
       propertyPath: m_Name
-      value: Ice Elemental Variant Variant
+      value: Ice Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

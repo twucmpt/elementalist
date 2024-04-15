@@ -53,7 +53,7 @@ MonoBehaviour:
       weight: 5
       minTime: 0
   playerSpeed: 400
-  playerHealth: 5
-  playerInvicinbility: 0
-  levelScalingConstant: 90
-  levelScalingOffset: 0
+  playerHealth: 10
+  playerInvicinbility: 0.01
+  levelScalingConstant: 150
+  levelScalingOffset: 200

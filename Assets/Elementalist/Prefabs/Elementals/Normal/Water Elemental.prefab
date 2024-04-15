@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: OnExplode.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
+      propertyPath: scalingStats.Array.data[0].scaleFactor
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6706284733291926456, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -54,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7759062376692369138, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
       propertyPath: m_Name
-      value: Water Elemental Variant
+      value: Water Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

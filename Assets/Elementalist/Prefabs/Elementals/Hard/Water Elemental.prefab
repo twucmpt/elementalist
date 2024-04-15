@@ -48,9 +48,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5964800561034859934, guid: f50482cc1b7beeb4d93804988d55126a, type: 3}
+      propertyPath: scalingStats.Array.data[3].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964800561034859934, guid: f50482cc1b7beeb4d93804988d55126a, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8165249198103657269, guid: f50482cc1b7beeb4d93804988d55126a, type: 3}
       propertyPath: m_Name
-      value: Water Elemental Variant Variant
+      value: Water Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

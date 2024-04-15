@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 878932300611273422, guid: 44ae7cbd64843374bb3ee8cb43e271a1, type: 3}
+      propertyPath: scalingStats.Array.data[0].scaleFactor
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1808565061738985775, guid: 44ae7cbd64843374bb3ee8cb43e271a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3433264806588001381, guid: 44ae7cbd64843374bb3ee8cb43e271a1, type: 3}
       propertyPath: m_Name
-      value: Earth Elemental Variant
+      value: Earth Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

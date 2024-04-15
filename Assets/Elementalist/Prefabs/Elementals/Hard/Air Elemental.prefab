@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4703251076695842559, guid: 0a02e0a1dda5ddc40a72eff4b72773ec, type: 3}
+      propertyPath: scalingStats.Array.data[3].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703251076695842559, guid: 0a02e0a1dda5ddc40a72eff4b72773ec, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6083947469878781214, guid: 0a02e0a1dda5ddc40a72eff4b72773ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7120962373928071252, guid: 0a02e0a1dda5ddc40a72eff4b72773ec, type: 3}
       propertyPath: m_Name
-      value: Air Elemental Variant Variant
+      value: Air Elemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
