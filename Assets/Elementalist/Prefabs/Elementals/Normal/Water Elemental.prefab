@@ -13,8 +13,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5204554219437336665, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
+      propertyPath: scalingStats.Array.data[0].offset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
+      propertyPath: scalingStats.Array.data[1].offset
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
       propertyPath: scalingStats.Array.data[0].scaleFactor
-      value: 4
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
+      propertyPath: scalingStats.Array.data[1].scaleFactor
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6706284733291926456, guid: 8a148e3caafd5d04cbe59cd20a5dec13, type: 3}
       propertyPath: m_LocalPosition.x

@@ -9,8 +9,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5204554219437336665, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
+      propertyPath: scalingStats.Array.data[0].offset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
+      propertyPath: scalingStats.Array.data[1].offset
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
+      propertyPath: scalingStats.Array.data[3].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
       propertyPath: scalingStats.Array.data[0].scaleFactor
-      value: 4
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
+      propertyPath: scalingStats.Array.data[1].scaleFactor
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6706284733291926456, guid: c33159a107ed16a4b9f5903be3f5a086, type: 3}
       propertyPath: m_LocalPosition.x

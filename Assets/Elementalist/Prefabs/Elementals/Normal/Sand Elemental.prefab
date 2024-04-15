@@ -9,8 +9,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5204554219437336665, guid: 4178459911327434ab359f82e0fd0eba, type: 3}
+      propertyPath: scalingStats.Array.data[0].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: 4178459911327434ab359f82e0fd0eba, type: 3}
+      propertyPath: scalingStats.Array.data[1].offset
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: 4178459911327434ab359f82e0fd0eba, type: 3}
       propertyPath: scalingStats.Array.data[0].scaleFactor
-      value: 4
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204554219437336665, guid: 4178459911327434ab359f82e0fd0eba, type: 3}
+      propertyPath: scalingStats.Array.data[3].scaleFactor
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6706284733291926456, guid: 4178459911327434ab359f82e0fd0eba, type: 3}
       propertyPath: m_LocalPosition.x
