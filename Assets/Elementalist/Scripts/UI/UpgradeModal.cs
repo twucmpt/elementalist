@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,6 +10,8 @@ public class UpgradeModal : ModalControl {
   //self reference, this is okay i guess
   public ModalControl upgradeModal;
   public UnityEvent<ElementalType> upsertElemental;
+
+  public TextMeshProUGUI tooltip;
 
   private ElementalType selection = ElementalType.None;
   private Dictionary<ElementalType, UpgradeDisplayTile> tiles = new Dictionary<ElementalType, UpgradeDisplayTile>();
@@ -49,6 +52,10 @@ public class UpgradeModal : ModalControl {
       // store tile status
       if(info.type != ElementalType.None)
         tiles.Add(info.type, newTile);
+    }
+
+    if(tiles.Count < 4) {
+      tooltip.text = "Max out elementals to unlock more combinations.";
     }
   }
 

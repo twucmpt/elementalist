@@ -21,6 +21,14 @@ public class UpgradeDisplayTile : UIButton {
   public void SetDisplay(ElementalDisplayInfo info) {
     type = info.type;
 
+    if(type == ElementalType.None) {
+      gameObject.SetActive(false);
+      return;
+    }
+    else {
+      gameObject.SetActive(true);
+    }
+
     // set the display info
 
     GameObject name = gameObject.transform.Find("Name").gameObject;
