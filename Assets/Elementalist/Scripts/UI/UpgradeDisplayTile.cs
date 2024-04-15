@@ -31,6 +31,8 @@ public class UpgradeDisplayTile : UIButton {
     description.GetComponentInChildren<TextMeshProUGUI>().text = info.description;
     icon.GetComponentInChildren<Image>().sprite = info.icon;
     if(info.combinationIcons.Count > 0) {
+      comboImage1.gameObject.SetActive(true);
+      comboImage2.gameObject.SetActive(true);
       comboImage1.sprite = info.combinationIcons[0];
       comboImage2.sprite = info.combinationIcons[1];
     }

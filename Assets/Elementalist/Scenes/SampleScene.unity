@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: elementals.Array.data[0].type
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: elementals.Array.data[0].level
@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 7759062376692369138, guid: 756bc9ea851af3c4d8a19839bcd62207, type: 3}
     - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: elementals.Array.data[0].cooldown
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2519519305328469418, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: OnLevelUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -752,7 +752,7 @@ MonoBehaviour:
   HealthBar: {fileID: 0}
   ExpBar: {fileID: 0}
   LevelText: {fileID: 0}
-  ScoreText: {fileID: 2020081556}
+  ScoreText: {fileID: 0}
   ClockText: {fileID: 0}
   playerHealth: {fileID: 0}
   playerLeveling: {fileID: 0}
@@ -1225,17 +1225,6 @@ TextMesh:
   m_CorrespondingSourceObject: {fileID: 4707100961215331834, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
   m_PrefabInstance: {fileID: 5206719547547667320}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2020081556 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 982247637883032835, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
-  m_PrefabInstance: {fileID: 5206719547547667320}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2090680142 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
@@ -1429,12 +1418,32 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: Codex.Array.data[0].maxLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: Codex.Array.data[2].maxLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: Codex.Array.data[3].maxLevel
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: Codex.Array.data[4].maxLevel
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
       propertyPath: Codex.Array.data[8].maxLevel
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
       propertyPath: Codex.Array.data[9].maxLevel
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
+      propertyPath: Codex.Array.data[2].description
+      value: This dude's airy as hell
       objectReference: {fileID: 0}
     - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
       propertyPath: Codex.Array.data[8].description
