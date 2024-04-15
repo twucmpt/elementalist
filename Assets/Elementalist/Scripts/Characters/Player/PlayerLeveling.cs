@@ -17,6 +17,8 @@ public class PlayerLeveling : MonoBehaviour {
     private int levelScalingConstant = 60;
     public int LevelScalingConstant { get; set; }
 
+    public int LevelScalingOffset { get; set; }
+
     private int level = 0;
     // level should be calculated based on exp
     public int Level { 
@@ -33,7 +35,7 @@ public class PlayerLeveling : MonoBehaviour {
 
     // leveling curve defined here
     private int expToLevel() {
-        return 60 * Level * Level;
+        return LevelScalingConstant * Level * Level + LevelScalingOffset;
     }
 
     public void AddExp(float exp) {

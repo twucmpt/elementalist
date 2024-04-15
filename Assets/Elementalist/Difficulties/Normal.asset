@@ -21,6 +21,8 @@ MonoBehaviour:
   - {fileID: 7461976349521286121, guid: 3079ad04b76c74444b9087ca4795f811, type: 3}
   - {fileID: 343221075790881788, guid: 5f733fa0e1cb4ea4b86afc2e1fceba03, type: 3}
   - {fileID: 8165249198103657269, guid: f50482cc1b7beeb4d93804988d55126a, type: 3}
+  - {fileID: 7772641789120845113, guid: e9236952300ff9c429deb3550a0197da, type: 3}
+  - {fileID: 8027031892264863158, guid: 4aca5da66fbd52e4abc51840dc79a01c, type: 3}
   enemyDirectorSettings:
     initalPointRate: 0.1
     pointRateMultiplier: 0.0001
@@ -54,3 +56,4 @@ MonoBehaviour:
   playerHealth: 10
   playerInvicinbility: 0.15
   levelScalingConstant: 75
+  levelScalingOffset: 0

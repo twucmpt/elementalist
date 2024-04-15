@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
 
         // Player Leveling
          player.GetComponent<PlayerLeveling>().LevelScalingConstant = setting.levelScalingConstant;
+         player.GetComponent<PlayerLeveling>().LevelScalingOffset = setting.levelScalingOffset;
     }
 }
 

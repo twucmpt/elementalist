@@ -10,4 +10,6 @@ public class DifficultySetting : ScriptableObject
     public float playerHealth;
     public float playerInvicinbility;
     public int levelScalingConstant;
+
+    public int levelScalingOffset;
 }

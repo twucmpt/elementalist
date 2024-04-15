@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class LightningProjectile : Projectile
@@ -22,7 +23,7 @@ public class LightningProjectile : Projectile
 
     void DoTriggerStuff(Collider2D collider) {
         if (collider.transform == target) {
-            collider.gameObject.SendMessage("DealDamage", (stats.GetStat(StatType.Damage), DamageType.Lightning));
+            collider.gameObject.SendMessage("DealDamage", new Tuple<float,DamageType>(stats.GetStat(StatType.Damage), DamageType.Lightning));
             target = FindClosestEnemy();
         }
     }
@@ -46,7 +47,7 @@ public class LightningProjectile : Projectile
             Destroy(gameObject);
         }
 
-        int i = Random.Range(0, enemies.Count);
+        int i = UnityEngine.Random.Range(0, enemies.Count);
         return enemies[i];
     }
 }
