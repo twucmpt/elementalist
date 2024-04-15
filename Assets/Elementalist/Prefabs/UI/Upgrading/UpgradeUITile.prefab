@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9064306538085367958}
   - component: {fileID: 4637864341831775584}
   - component: {fileID: 4141391652351785979}
+  - component: {fileID: 5454601697691934304}
   m_Layer: 5
   m_Name: UpgradeUITile
   m_TagString: Untagged
@@ -117,6 +118,20 @@ MonoBehaviour:
   nextLevelBar: {fileID: 6325541547536734258}
   comboImage1: {fileID: 3902711081313783895}
   comboImage2: {fileID: 6622092106072238470}
+--- !u!114 &5454601697691934304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814983872543120159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 2
+  m_AspectRatio: 1
 --- !u!1 &2081296979253214110
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +337,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 24.5
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
