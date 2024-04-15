@@ -1419,11 +1419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
       propertyPath: Codex.Array.data[0].maxLevel
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
       propertyPath: Codex.Array.data[2].maxLevel
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 564047682217288801, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
       propertyPath: Codex.Array.data[3].maxLevel
