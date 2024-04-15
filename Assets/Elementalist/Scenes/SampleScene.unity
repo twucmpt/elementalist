@@ -132,6 +132,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
+      propertyPath: elementals.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 925459023366238808, guid: 6df16f59a69b8354aacd6da717cb3771, type: 3}
       propertyPath: elementals.Array.data[0].type
       value: 9
       objectReference: {fileID: 0}
@@ -749,6 +753,7 @@ MonoBehaviour:
   ExpBar: {fileID: 0}
   LevelText: {fileID: 0}
   ScoreText: {fileID: 2020081556}
+  ClockText: {fileID: 0}
   playerHealth: {fileID: 0}
   playerLeveling: {fileID: 0}
 --- !u!114 &1139153479
@@ -1215,6 +1220,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f25527e422f00a49bd25ee1f999991b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!102 &1981559527 stripped
+TextMesh:
+  m_CorrespondingSourceObject: {fileID: 4707100961215331834, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
+  m_PrefabInstance: {fileID: 5206719547547667320}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2020081556 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 982247637883032835, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
@@ -1357,6 +1367,10 @@ PrefabInstance:
       value: StatusCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 8392607231753601162, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
+      propertyPath: ClockText
+      value: 
+      objectReference: {fileID: 1981559527}
+    - target: {fileID: 8392607231753601162, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1480069932}
@@ -1365,7 +1379,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1480069926}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 374120863591957602, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff0112f57634dc14299a5a32202ac947, type: 3}

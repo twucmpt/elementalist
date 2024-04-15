@@ -13,7 +13,7 @@ public class ElementalCombination
   public ElementalType result;
 }
 
-[CreateAssetMenu(fileName = "CombinationTree", menuName = "CombinationTree"), System.Serializable]
+[CreateAssetMenu(fileName = "CombinationTree", menuName = "CombinationTree"), Serializable]
 public static class CombinationTree
 {
 
