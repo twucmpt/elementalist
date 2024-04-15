@@ -30,6 +30,8 @@ public class ElementalDisplayInfo {
     public bool isCombination = false;
 
     public int currentLevel;
+
+    public List<Sprite> combinationIcons;
 }
 
 // associate prefabs with ElementalTypes so we can pass prefabs to the SummonElementals script
@@ -46,7 +48,6 @@ public class CodexEntry {
     public string description;
     public string name;
     public Sprite icon;
-    public bool isCombination = false;
 }
 
 public class UpgradeManager : MonoBehaviour {
@@ -64,14 +65,22 @@ public class UpgradeManager : MonoBehaviour {
         
         List<ElementalDisplayInfo> validElements = Codex
             .FindAll(entry => !CurrentElementals.ContainsKey(entry.type) || CurrentElementals[entry.type] != entry.maxLevel) // filter out maxed out elementals
-            .FindAll(entry => !entry.isCombination || CurrentElementals.ContainsKey(entry.type) || CanCombine(entry.type)) // filter out combination elementals that can't be upgraded
-            .ConvertAll(entry => new ElementalDisplayInfo {
-                type = entry.type,
-                maxLevel = entry.maxLevel,
-                description = entry.description,
-                name = entry.name,
-                icon = entry.icon,
-                currentLevel = CurrentElementals.ContainsKey(entry.type) ? CurrentElementals[entry.type] : 0,
+            .FindAll(entry => !CombinationTree.IsCombination(entry.type) || CurrentElementals.ContainsKey(entry.type) || CanCombine(entry.type)) // filter out combination elementals that can't be upgraded
+            .ConvertAll(entry => {
+                ElementalDisplayInfo edi = new ElementalDisplayInfo {
+                    type = entry.type,
+                    maxLevel = entry.maxLevel,
+                    description = entry.description,
+                    name = entry.name,
+                    icon = entry.icon,
+                    currentLevel = CurrentElementals.ContainsKey(entry.type) ? CurrentElementals[entry.type] : 0,
+                    combinationIcons = new List<Sprite>()
+                };
+                if(CombinationTree.IsCombination(entry.type)) {
+                    edi.combinationIcons.Add(Codex.Find(e => e.type == CombinationTree.GetIngredients(entry.type).Item1).icon);
+                    edi.combinationIcons.Add(Codex.Find(e => e.type == CombinationTree.GetIngredients(entry.type).Item2).icon);
+                }
+                return edi;
             });
 
         validElements.Shuffle();
@@ -88,7 +97,7 @@ public class UpgradeManager : MonoBehaviour {
         CurrentElementals[type] += 1;
         player.UpsertElemental(entry.prefab);
 
-        if(entry.isCombination) {
+        if(CombinationTree.IsCombination(type)) {
             Tuple<ElementalType, ElementalType> ingredients = CombinationTree.GetIngredients(type);
             player.ResetElemental(Codex.Find(entry => entry.type == ingredients.Item1).prefab);
             player.ResetElemental(Codex.Find(entry => entry.type == ingredients.Item2).prefab);
@@ -106,7 +115,7 @@ public class UpgradeManager : MonoBehaviour {
             .FindAll(entry => CurrentElementals.ContainsKey(entry.type) && CurrentElementals[entry.type] == entry.maxLevel)
             .ConvertAll(entry => entry.type);
 
-        List<ElementalCombination> possibleCombinations = CombinationTree.getPossibleCombinations(maxxedOutElementals.ToArray());
+        List<ElementalCombination> possibleCombinations = CombinationTree.GetPossibleCombinations(maxxedOutElementals.ToArray());
 
         return possibleCombinations.Exists(combination => combination.result == type);
     }

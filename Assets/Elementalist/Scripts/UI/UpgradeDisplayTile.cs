@@ -13,8 +13,10 @@ public class UpgradeDisplayTile : UIButton {
   public Image currentLevelBar;
   public Image nextLevelBar;
 
+  public Image comboImage1;
+  public Image comboImage2;
+
   private float nextLevelFillAmount;
-  private float currentLevelFillAmount;
 
   public void SetDisplay(ElementalDisplayInfo info) {
     type = info.type;
@@ -28,8 +30,16 @@ public class UpgradeDisplayTile : UIButton {
     name.GetComponentInChildren<TextMeshProUGUI>().text = info.name;
     description.GetComponentInChildren<TextMeshProUGUI>().text = info.description;
     icon.GetComponentInChildren<Image>().sprite = info.icon;
+    if(info.combinationIcons.Count > 0) {
+      comboImage1.sprite = info.combinationIcons[0];
+      comboImage2.sprite = info.combinationIcons[1];
+    }
+    else {
+      comboImage1.gameObject.SetActive(false);
+      comboImage2.gameObject.SetActive(false);
+    }
 
-    currentLevelFillAmount = currentLevelBar.fillAmount = (float)info.currentLevel / info.maxLevel;
+    currentLevelBar.fillAmount = (float)info.currentLevel / info.maxLevel;
     nextLevelFillAmount = nextLevelBar.fillAmount = (float)(info.currentLevel + 1) / info.maxLevel;
   }
 
