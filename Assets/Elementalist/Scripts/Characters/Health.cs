@@ -15,7 +15,7 @@ public class Resistance {
 public class Health : MonoBehaviour
 {
     public float invicinbilityCooldown;
-    public float invicinbility = 0;
+    public float invincibility = 0;
     public List<Resistance> resistances;
     public float maxHealth;
     public float health;
@@ -27,7 +27,8 @@ public class Health : MonoBehaviour
     public UnityEvent onHeal;
 
     public void DealDamage(Tuple<float, DamageType> damageInfo) {
-        if (health <= 0 | invicinbility > 0) return;
+        if (health <= 0 | invincibility > 0) return;
+        if (gameObject.tag == "Player" && damageInfo.Item2 != DamageType.Untyped) return;
 
         float damage = damageInfo.Item1;
         foreach (Resistance resistance in resistances) {
@@ -43,7 +44,7 @@ public class Health : MonoBehaviour
             }
             else if (health > 0) {
                 onTakeDamage.Invoke();
-                invicinbility = invicinbilityCooldown;
+                invincibility = invicinbilityCooldown;
             }
         }
         else {
@@ -64,6 +65,6 @@ public class Health : MonoBehaviour
     }
 
     void Update() {
-        if (invicinbility > 0) invicinbility -= Time.deltaTime;
+        if (invincibility > 0) invincibility -= Time.deltaTime;
     }
 }
