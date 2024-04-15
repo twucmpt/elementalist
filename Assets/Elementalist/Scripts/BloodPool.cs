@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class BloodPool : Projectile
@@ -15,7 +15,7 @@ public class BloodPool : Projectile
 
     void DoTriggerStuff(Collider2D collider) {
         if (collider.gameObject.CompareTag("Player")) {
-            collider.gameObject.SendMessage("DealDamage", (-stats.GetStat(StatType.EffectStrength), DamageType.Untyped));
+            collider.gameObject.SendMessage("DealDamage", new Tuple<float,DamageType>(-stats.GetStat(StatType.EffectStrength), DamageType.Untyped));
         }
     }
 }
