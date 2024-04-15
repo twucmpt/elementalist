@@ -1,20 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
 public class ModalControl : MonoBehaviour
 {
-
-    public void Awake()
-    {
-    }
-
-    public void Update()
-    {
-    }
-
     public void OpenModal()
     {
         Time.timeScale = 0;
