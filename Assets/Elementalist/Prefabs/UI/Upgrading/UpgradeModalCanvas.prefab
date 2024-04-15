@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Spacing: 10
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Spacing: 10
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.55
+  m_fontSize: 18
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -605,7 +605,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.25
+  m_fontSize: 18
   m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1307,7 +1307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2902656264774508768, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_fontSize
-      value: 24.5
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3406200126891360841, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1419,7 +1419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734394076647736809, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 251.20001
       objectReference: {fileID: 0}
     - target: {fileID: 8734394076647736809, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1541,7 +1541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2902656264774508768, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_fontSize
-      value: 24.5
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3406200126891360841, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1653,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734394076647736809, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 251.20001
       objectReference: {fileID: 0}
     - target: {fileID: 8734394076647736809, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1779,7 +1779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2902656264774508768, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_fontSize
-      value: 24.5
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3406200126891360841, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1891,7 +1891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734394076647736809, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 251.20001
       objectReference: {fileID: 0}
     - target: {fileID: 8734394076647736809, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2017,7 +2017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2902656264774508768, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_fontSize
-      value: 24.5
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3406200126891360841, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2129,7 +2129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734394076647736809, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 251.20001
       objectReference: {fileID: 0}
     - target: {fileID: 8734394076647736809, guid: 8a41ecc04b351ca40b4a84931fd965e4, type: 3}
       propertyPath: m_SizeDelta.y
