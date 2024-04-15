@@ -52,5 +52,6 @@ public enum DamageType {
     Poison,
     Blood,
     Ice,
-    Sand
+    Sand,
+    Magma
 }

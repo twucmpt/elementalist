@@ -15,6 +15,7 @@ public enum ElementalType {
     Nature,
     Blood,
     Sand,
+    Magma,
     None
 } 
 
