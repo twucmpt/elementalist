@@ -36,6 +36,10 @@ public class HelpModal : ModalControl
     ShowTip(currentTipIndex - 1);
   }
 
+  public void RandomTip() {
+    ShowTip(Random.Range(0, tips.Length));
+  }
+
   public void ShowTip(int index) {
 
     int i = (index + tips.Length) % tips.Length;

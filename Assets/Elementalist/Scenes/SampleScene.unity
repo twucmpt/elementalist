@@ -1330,6 +1330,58 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -4
       objectReference: {fileID: 0}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[0].text
+      value: Use WASD to move.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[1].text
+      value: There are 3 different diffuculties avaiable in the main menu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[2].text
+      value: You can access the main menu at any time by pressing escape (ESC).
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[3].text
+      value: Nearby explosions can ignite gas clouds.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[4].text
+      value: Skeletons are weak to air type attacks.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[5].text
+      value: Mushrooms are immune to poison.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[0].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 479deca491daf5945b6088e1ae015928, type: 3}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[1].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 72de915c678a20f47a8b8767dd349d33, type: 3}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[2].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 55ee68e85cc33284ebfac993db29f048, type: 3}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[3].image
+      value: 
+      objectReference: {fileID: 21300000, guid: f1ccdac5995053549979d545efa66738, type: 3}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[4].image
+      value: 
+      objectReference: {fileID: -9206091644520726168, guid: f7fb89b82e205ea4ba8a88cee4d3070b, type: 3}
+    - target: {fileID: 2515032942115740074, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
+      propertyPath: tips.Array.data[5].image
+      value: 
+      objectReference: {fileID: 5304202850863732263, guid: c6ac0078f39473048b9f54d791095f35, type: 3}
     - target: {fileID: 3330093993815326117, guid: 656f2244a46312049b9881b5b6ecc5cc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1738,6 +1790,18 @@ PrefabInstance:
     - target: {fileID: 2383538759279340046, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622986906216256000, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707100961215331834, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
+      propertyPath: m_OffsetZ
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707100961215331834, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
+      propertyPath: m_Color.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6405952779647240082, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
       propertyPath: m_Name
