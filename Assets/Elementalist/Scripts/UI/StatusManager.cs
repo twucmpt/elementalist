@@ -8,7 +8,7 @@ public class StatusManager : MonoBehaviour {
   public Image ExpBar;
   public TextMeshProUGUI LevelText;
   public TextMeshProUGUI ScoreText;
-  public TextMesh ClockText;
+  public TextMeshProUGUI ClockText;
   public Health playerHealth;
   public PlayerLeveling playerLeveling;
 

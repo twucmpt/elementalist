@@ -1235,11 +1235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f25527e422f00a49bd25ee1f999991b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!102 &1981559527 stripped
-TextMesh:
-  m_CorrespondingSourceObject: {fileID: 4707100961215331834, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
-  m_PrefabInstance: {fileID: 5206719547547667320}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2090680142 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7237045740121749829, guid: 7b42cfc4bbfd3cd4399697a3878c70fb, type: 3}
@@ -1819,6 +1814,10 @@ PrefabInstance:
       propertyPath: m_Color.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5209424732525430667, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
+      propertyPath: m_fontSize
+      value: 96
+      objectReference: {fileID: 0}
     - target: {fileID: 6405952779647240082, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
       propertyPath: m_Name
       value: StatusCanvas
@@ -1855,10 +1854,6 @@ PrefabInstance:
       propertyPath: buttonClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 8392607231753601162, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
-      propertyPath: ClockText
-      value: 
-      objectReference: {fileID: 1981559527}
     - target: {fileID: 8392607231753601162, guid: ff0112f57634dc14299a5a32202ac947, type: 3}
       propertyPath: playerHealth
       value: 
