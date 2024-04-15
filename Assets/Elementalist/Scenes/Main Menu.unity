@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 557515880}
   - component: {fileID: 557515879}
   - component: {fileID: 557515878}
+  - component: {fileID: 557515881}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -226,6 +227,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &557515881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557515877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d234a14d95874e85b39767f6e3143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crtShader: {fileID: 4800000, guid: f685d715724761d468458424cb1efa7f, type: 3}
+  curvature: 6.51
+  vignetteWidth: 30
 --- !u!1 &883915070
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 601513646993742263, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -170.30786
+      value: -140
       objectReference: {fileID: 0}
     - target: {fileID: 616545118592467704, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -367,6 +383,10 @@ PrefabInstance:
     - target: {fileID: 1535910691983169228, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
       propertyPath: m_Camera
       value: 
+      objectReference: {fileID: 557515879}
+    - target: {fileID: 1535910691983169228, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1593253418032958867, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
       propertyPath: m_Pivot.x
@@ -554,7 +574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3940641785704753882, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -170.30786
+      value: -140
       objectReference: {fileID: 0}
     - target: {fileID: 3994571647708279171, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -802,7 +822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7532528777118849120, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -170.30786
+      value: -140
       objectReference: {fileID: 0}
     - target: {fileID: 7547049791868417391, guid: 158cd85840f13fc4d81f98af6369e08a, type: 3}
       propertyPath: m_AnchorMax.x

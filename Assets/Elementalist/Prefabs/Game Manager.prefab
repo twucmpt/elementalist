@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d9c3ffed02ee24980cfea099bcebab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 2
+  points: 3
   pointRate: 0
   minPoints: 0
   settings:
@@ -74,6 +74,7 @@ MonoBehaviour:
     minPointsMultiplier: 0.1
     maxPoints: 0
     chanceToSpawnWave: 0
+    maxPointRate: 0
     enemyCatalog: []
   playerLeveling: {fileID: 0}
   mainCamera: {fileID: 0}
@@ -112,48 +113,40 @@ MonoBehaviour:
     description: This dude's hot as hell
     name: Fire
     icon: {fileID: 21300000, guid: 07f1626437c34cd4f91851a0a0bc51d5, type: 3}
-    isCombination: 0
   - type: 1
     maxLevel: 7
     description: This dude's cold as hell
     name: Ice
     icon: {fileID: 21300000, guid: 98abc6e7a7db4774f89ae113295256bd, type: 3}
-    isCombination: 1
   - type: 4
     maxLevel: 4
     description: This dude's air as hell
     name: Air
     icon: {fileID: 21300000, guid: 8467f003c056e804c8d5e4c914abce1e, type: 3}
-    isCombination: 0
   - type: 3
     maxLevel: 4
     description: This dude's earth as hell
     name: Earth
     icon: {fileID: 21300000, guid: 60a5ceff1b9f91e44ba837c2f13ca147, type: 3}
-    isCombination: 0
   - type: 2
     maxLevel: 4
     description: This dude's wet as hell
     name: Water
     icon: {fileID: 21300000, guid: 40d161cd4f7d45f40ad4f27ee7f6532a, type: 3}
-    isCombination: 0
   - type: 5
     maxLevel: 7
     description: This dude's lit as hell
     name: Lightning
     icon: {fileID: 21300000, guid: 3ad45e5643fdb3f4f892d2bb316d8847, type: 3}
-    isCombination: 1
   - type: 6
     maxLevel: 7
     description: This dude's natty as hell
     name: Nature
     icon: {fileID: 21300000, guid: ba6f1f77c81c1f243a2aa20fc893af83, type: 3}
-    isCombination: 1
   - type: 7
     maxLevel: 7
     description: This dude's bloody as hell
     name: Blood
     icon: {fileID: 21300000, guid: 3e04b1d31d5c1c64ca2ede54d1a07984, type: 3}
-    isCombination: 1
   player: {fileID: 0}
   modal: {fileID: 0}
