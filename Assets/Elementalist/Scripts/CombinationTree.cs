@@ -26,7 +26,7 @@ public static class CombinationTree
     new ElementalCombination { type1 = ElementalType.Air, type2 = ElementalType.Earth, result = ElementalType.Sand },
   };
 
-  public static List<ElementalCombination> getPossibleCombinations(ElementalType[] types)
+  public static List<ElementalCombination> GetPossibleCombinations(ElementalType[] types)
   {
     List<ElementalCombination> possibleCombinations = new List<ElementalCombination>();
     foreach (ElementalCombination combination in combinations)
@@ -41,6 +41,15 @@ public static class CombinationTree
 
   public static Tuple<ElementalType, ElementalType> GetIngredients(ElementalType type)
   {
+    if (!IsCombination(type))
+    {
+      return null;
+    }
     return new Tuple<ElementalType, ElementalType>(combinations.First(c => c.result == type).type1, combinations.First(c => c.result == type).type2);
+  }
+
+  public static bool IsCombination(ElementalType type)
+  {
+    return combinations.Any(c => c.result == type);
   }
 }
