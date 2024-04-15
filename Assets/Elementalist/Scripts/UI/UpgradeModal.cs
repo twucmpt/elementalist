@@ -31,7 +31,7 @@ public class UpgradeModal : ModalControl {
     upgradeModal.OpenModal();
 
     // find modal content section
-    GameObject upgradeContent = upgradeModal.transform.Find("ModalBlur/UpgradeModalFrame/Content").gameObject;
+    GameObject upgradeContent = upgradeModal.transform.Find("ModalBlur/container/UpgradeModalFrame/Content/Content").gameObject;
     List<GameObject> children = new List<GameObject>{
       upgradeContent.transform.Find("Row 1/UpgradeUITile1").gameObject, 
       upgradeContent.transform.Find("Row 1/UpgradeUITile2").gameObject, 
@@ -55,7 +55,7 @@ public class UpgradeModal : ModalControl {
     }
 
     if(tiles.Count < 4) {
-      tooltip.text = "Max out elementals to unlock more combinations.";
+      tooltip.text = "Max out elementals to unlock more combinations";
     }
   }
 
