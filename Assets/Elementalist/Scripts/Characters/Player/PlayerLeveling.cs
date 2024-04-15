@@ -43,7 +43,7 @@ public class PlayerLeveling : MonoBehaviour {
         if(expToLevel() < this.exp) {
             Level++;
         }
-        score += (int)exp;
+        score += (int)(exp * GameManager.instance.GetDifficultySetting().scoreMultiplier);
     }
 
     // i know it says percent but it's actually in the range [0-1]
