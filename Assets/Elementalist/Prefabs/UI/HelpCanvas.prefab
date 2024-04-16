@@ -51,7 +51,7 @@ Canvas:
   m_GameObject: {fileID: 879188217761864422}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -62,7 +62,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1127688691
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &996924568845673731
@@ -156,14 +156,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tips:
-  - image: {fileID: -9206091644520726168, guid: f7fb89b82e205ea4ba8a88cee4d3070b, type: 3}
-    text: Skeletons are weak to water & air type attacks.
-  - image: {fileID: 5304202850863732263, guid: c6ac0078f39473048b9f54d791095f35, type: 3}
-    text: Mushrooms are immune to poison.
+  - image: {fileID: 21300000, guid: 479deca491daf5945b6088e1ae015928, type: 3}
+    text: Use WASD to move.
+  - image: {fileID: 21300000, guid: 76d32c29ddc54de49afea9180e08da6b, type: 3}
+    text: Don't let the monsters touch you.
+  - image: {fileID: 21300000, guid: 72de915c678a20f47a8b8767dd349d33, type: 3}
+    text: There are 3 different diffuculties avaiable in the main menu.
+  - image: {fileID: 21300000, guid: 55ee68e85cc33284ebfac993db29f048, type: 3}
+    text: You can access the main menu at any time by pressing escape (ESC).
   - image: {fileID: 21300000, guid: f1ccdac5995053549979d545efa66738, type: 3}
     text: Nearby explosions can ignite gas clouds.
   - image: {fileID: -9206091644520726168, guid: f7fb89b82e205ea4ba8a88cee4d3070b, type: 3}
     text: Skeletons are weak to air type attacks.
+  - image: {fileID: 5304202850863732263, guid: c6ac0078f39473048b9f54d791095f35, type: 3}
+    text: Mushrooms are immune to poison.
   tipText: {fileID: 7186374752352938807}
   tipImage: {fileID: 7359636615687636306}
 --- !u!1 &1039916471053023319
