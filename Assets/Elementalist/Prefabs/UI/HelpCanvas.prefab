@@ -63,7 +63,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -1127688691
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &996924568845673731
 MonoBehaviour:
@@ -160,6 +160,14 @@ MonoBehaviour:
     text: Use WASD to move.
   - image: {fileID: 21300000, guid: 76d32c29ddc54de49afea9180e08da6b, type: 3}
     text: Don't let the monsters touch you.
+  - image: {fileID: 21300000, guid: a73c194bd0f8aee4bb6278ca13ddbbec, type: 3}
+    text: Your staff will summon elementals to defend you.
+  - image: {fileID: 21300000, guid: f7b4a003afdd37d46a2ea1c9a18a3f4c, type: 3}
+    text: Collect coins to gain score & experience.
+  - image: {fileID: 21300000, guid: 5a59e7cd5b993584f8b90c5fcc9544e2, type: 3}
+    text: Upgrade your elementals with each level.
+  - image: {fileID: 21300000, guid: 2ad78acbd0667cb4688575dd323fb053, type: 3}
+    text: Max out multiple elementals to unlock powerful combinations.
   - image: {fileID: 21300000, guid: 72de915c678a20f47a8b8767dd349d33, type: 3}
     text: There are 3 different diffuculties avaiable in the main menu.
   - image: {fileID: 21300000, guid: 55ee68e85cc33284ebfac993db29f048, type: 3}
