@@ -176,8 +176,14 @@ MonoBehaviour:
     text: Nearby explosions can ignite gas clouds.
   - image: {fileID: -9206091644520726168, guid: f7fb89b82e205ea4ba8a88cee4d3070b, type: 3}
     text: Skeletons are weak to air type attacks.
+  - image: {fileID: 21300000, guid: 25a1fff107bcdf2458f7505702743c0b, type: 3}
+    text: The fire effect stacks, doing more damage the more times it's applied.
   - image: {fileID: 5304202850863732263, guid: c6ac0078f39473048b9f54d791095f35, type: 3}
     text: Mushrooms are immune to poison.
+  - image: {fileID: 21300000, guid: 1d893f8bb097f874bb31b07d77a24d11, type: 3}
+    text: The fire & water effects cancel each other out.
+  - image: {fileID: 21300000, guid: 319c65f969c34cc479a4d90d249d2a2e, type: 3}
+    text: Lightning does more damage to wet enemies.
   tipText: {fileID: 7186374752352938807}
   tipImage: {fileID: 7359636615687636306}
 --- !u!1 &1039916471053023319
