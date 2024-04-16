@@ -26,7 +26,7 @@ public class LightningProjectile : Projectile
     void DoTriggerStuff(Collider2D collider) {
         if (collider.transform == target) {
             collider.gameObject.SendMessage("DealDamage", new Tuple<float,DamageType>(stats.GetStat(StatType.Damage), DamageType.Lightning));
-            OnHit.Invoke();
+            if (UnityEngine.Random.Range(0,5) == 0) OnHit.Invoke();
             target = FindClosestEnemy();
         }
     }
