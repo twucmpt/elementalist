@@ -4618,6 +4618,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2212183785514938219, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
+      propertyPath: m_text
+      value: SFX Volume
+      objectReference: {fileID: 0}
     - target: {fileID: 2953050477915291882, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
       propertyPath: m_Name
       value: SFX
@@ -5403,10 +5407,6 @@ PrefabInstance:
       value: Music Volume
       objectReference: {fileID: 0}
     - target: {fileID: 1475870196925574451, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
-      propertyPath: m_fontSize
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 1475870196925574451, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -832732695801843487, guid: fca9a5e41b13a1b4fab8acfddbd8d841, type: 2}
@@ -5417,6 +5417,10 @@ PrefabInstance:
     - target: {fileID: 1846095362841755011, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212183785514938219, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
+      propertyPath: m_text
+      value: Music Volume
       objectReference: {fileID: 0}
     - target: {fileID: 2953050477915291882, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
       propertyPath: m_Name
@@ -6567,10 +6571,6 @@ PrefabInstance:
       value: Master Volume
       objectReference: {fileID: 0}
     - target: {fileID: 1475870196925574451, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
-      propertyPath: m_fontSize
-      value: 74.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1475870196925574451, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -832732695801843487, guid: fca9a5e41b13a1b4fab8acfddbd8d841, type: 2}
@@ -6585,6 +6585,10 @@ PrefabInstance:
     - target: {fileID: 1846095362841755011, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212183785514938219, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
+      propertyPath: m_text
+      value: Master Volume
       objectReference: {fileID: 0}
     - target: {fileID: 2953050477915291882, guid: 36e85540f44ea184180c65aecd891bf8, type: 3}
       propertyPath: m_Name
