@@ -12,4 +12,5 @@ public class DifficultySetting : ScriptableObject
     public int levelScalingConstant;
 
     public int levelScalingOffset;
+    public float scoreMultiplier;
 }
