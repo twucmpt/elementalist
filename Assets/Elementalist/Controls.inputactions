@@ -227,6 +227,17 @@
                     "action": "OpenMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b74b9eb-97fb-4057-bc3a-c5f83c29f5c0",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -303,6 +314,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
+                    "action": "CloseMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0334f31-72e0-42dd-be9e-12abfcbdd88b",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "CloseMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
